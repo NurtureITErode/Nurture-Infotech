@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+footer {
+    padding: 30px;
+    min-height: 250px;
+    height: 40vh;
+    background-color: rgb(3, 3, 75);
+    display: grid;
+    grid-template-columns: 1fr .5fr 1fr 1fr;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1rem;
+}
+
+h1 {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.aboutFooter>p {
+    font-weight: normal;
+    text-align: justify;
+    padding: 20px 80px 0px 0px;
+    line-height: 30px;
+    font-size: 1.1rem;
+
+}
+
+.footerNav ul,
+.footerTrend ul {
+    list-style: none;
+}
+
+.footerNav ul a,
+.footerTrend ul a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 10px 0px;
+}
+
+.footerContact {
+    display: flex;
+    flex-direction: column;
+}
+
+.footerAddress,
+.footerphone,
+.footerEmail {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 5px;
+}
+
+.footerAddressPara {
+    margin-left: 10px;
+}
+
+.footerPhonePara {
+    margin-left: 10px;
+    
+}
+.footerIcons{
+    padding-left: 10px;
+}
+
+.icons 
+{
+	/* height: 100px; */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.icons div
+{
+	background-color:#fff;
+    color: #0f1473;
+	height: 30px;
+	width: 30px;
+	border-radius:50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding:7px;
+	margin: 3px;
+}
+#svg-icons
+{
+	height: 100%;
+	width: 100%;
+	transition: 400ms;
+}
+.facebk:hover {
+	background-color: #316FF6;
+}
+.instag:hover {
+	background-color: #bc2a8d;
+}
+.linked:hover {
+	background-color: #0077b5
+}
+.twitter:hover {
+	background-color: #1DA1F2;
+}
+.wats:hover {
+	background-color: #25d366;
+}
+.icons div:hover
+{
+	cursor:pointer;
+}
+.icons div:hover svg
+{
+	color: white;
+	transform: rotate(360deg);
+}
+
+@media all and (max-width:1400px) {}
+
+@media all and (max-width:1200px) {}
+
+@media all and (max-width:1024px) {}
+
+@media all and (max-width:768px) {
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: auto;
+    }
+
+}
+
+@media all and (max-width:540px) {
+    footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+        height: auto;
+        font-size: 1rem;
+    }
+    .aboutFooter>p
+    {
+       padding: 10px 0px;
+    }
+   
+}

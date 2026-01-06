@@ -1,0 +1,360 @@
+.hireScreen {}
+
+.mainScreen {
+    /* background-color: red; */
+    display: grid;
+    height: auto;
+    grid-template-columns: 1fr 1fr;
+}
+
+.hirelogoImg {
+    height: 100%;
+    width: 80%;
+    transform: scale(.9);
+}
+
+.hireLogo {
+    /* border: 2px solid rgb(12, 10, 87); */
+    display: flex;
+    justify-content: center;
+}
+
+.hireDetails {
+    /* background-color: azure; */
+    display: grid;
+    align-items: center;
+}
+
+.hireDetails>div {
+    line-height: 40px;
+}
+
+.hireHeadingOne {
+    font-size: 2.3rem;
+}
+
+.hireHeadingtwo {
+    font-size: 2rem;
+}
+
+.hireHeadingthr {
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 100px;
+}
+
+.hireButton {
+    display: inline-block;
+    border: none;
+    text-align: center;
+    transition: all 0.5s;
+    cursor: pointer;
+    position: relative;
+    padding: 10px 30px;
+    background: linear-gradient(to left, rgb(3, 3, 75), rgb(15, 15, 154));
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.TrainingModelDesign {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 20px 0px;
+
+}
+
+.TrainingModelHeading {
+    background: linear-gradient(to left, rgb(3, 3, 75), rgb(15, 15, 154));
+    height: 140px;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    color: #fff;
+    padding: 0px;
+    margin: 0px 75px;
+    position: relative;
+
+
+}
+
+.model1>h3,
+.model2>h3,
+.model3>h3 {
+    margin: 5px 0px;
+}
+
+.TrainingModelHeading h1 {}
+
+.TrainingModelTitle {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.model1,
+.model2,
+.model3 {
+    position: relative;
+    width: 500px;
+    /* height: 100px; */
+    /* min-height: 100px; */
+    margin: 15px;
+    line-height: 25px;
+    /* border-left: 5px solid rgb(3, 3, 75) ; */
+    padding: 15px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    overflow: hidden;
+}
+
+.model1::before,
+.model2::before,
+.model3::before {
+    content: '';
+    height: 195px;
+    width: 7px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-image: linear-gradient(to top, rgb(10, 10, 109), blue);
+
+}
+
+.model1:hover,
+.model2:hover,
+.model3:hover {
+    cursor: pointer;
+}
+
+.hireLink {
+    text-decoration: none;
+    color: #000;
+}
+
+.image-container {
+    height: 500px;
+
+}
+
+.HRForm {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.hrimg {
+    transform: scale(.70);
+
+}
+
+.hrimg>img {
+    height: 100%;
+    width: 100%;
+
+}
+
+.HRHeading {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.FormDesignHeading {
+    padding: 5px;
+    margin-bottom: 20px;
+    transform: translateX(-25px);
+}
+
+.FormDesign {
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+
+.image-container-mobile {
+    height: 250px;
+    display: none;
+}
+
+.image-container-mobile>img {
+    height: 100%;
+}
+
+@media all and (max-width:1400px) {
+    .image-container {
+        height: 400px;
+    }
+
+    .image-container>img {
+        height: 100%;
+
+    }
+
+    .hireHeadingthr {
+        line-height: 30px;
+    }
+
+    .mainScreen {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hireHeadingOne {
+        font-size: 2rem;
+    }
+
+    .hireHeadingthr {
+        font-size: 1rem;
+        padding-right: 50px;
+        margin: 15px 0px;
+        line-height: 20px;
+    }
+
+    .hireButton {}
+
+    .TrainingModelDesign {
+        margin: 33px 109px;
+    }
+
+}
+
+@media all and (max-width:1200px) {
+
+    .TrainingModel {
+        display: flex;
+
+    }
+}
+
+@media all and (max-width:1024px) {
+    .TrainingModelHeading {
+        display: block;
+        height: auto;
+        padding: 15px 20px;
+        margin: 10px 30px;
+    }
+    .TrainingModel
+    {
+        display: block;
+        margin: 0px;
+    }
+    .hireHeadingtwo
+    {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .mainScreen {
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+    .hirebtn
+    {
+        display: flex;
+    }
+    .hireDetails
+    {
+        padding: 10px 15px;
+    }
+    .TrainingModelDesign
+    {
+        margin: 0px;
+    }
+    .model1,.model2,.model3
+    {
+        width: 320px;
+        margin: 10px;
+    }
+    /* .image-container
+    {
+        height: 370px;
+        width: 450px;
+    }
+    .image-container > img
+    {
+        height: 100%;
+        width: 100%;
+    } */
+    .TrainingModelimg
+    {
+        display: grid;
+        align-items: center;
+    }
+    .HireForm
+    {
+        margin-top: 30px;
+    }
+
+}
+
+@media all and (max-width:768px) {
+    
+}
+
+@media all and (max-width:540px) {
+    .TrainingModelHeading {
+        display: none;
+    }
+
+    .mainScreen {
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+
+    .hireDetailsHeading {
+        padding: 15px;
+
+    }
+
+    .TrainingModelDesign {
+        display: grid;
+        max-width: 100vw;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .model1,
+    .model2,
+    .model3 {
+        width: 80vw;
+    }
+
+    .TrainingModelTitle {
+        display: flex;
+        align-items: start;
+        margin: 0px auto;
+        height: auto;
+    }
+
+    .image-container {
+        height: 250px;
+    }
+
+    .HRForm {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .Contactbutton {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .image-container-mobile {
+        height: 250px;
+        display: block;
+    }
+    .TrainingModelimg
+    {
+        display: none;
+    }
+    .model1, .model2, .model3 {
+        width: 90vw;
+    }
+}

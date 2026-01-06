@@ -1,0 +1,44 @@
+.courseBanner {
+  height: 300px;
+  /* background: linear-gradient(
+    45deg,
+    rgb(1, 1, 47),
+    #2d2dd6,
+    #23a6d5,
+    #23d2d5,
+    #02f5f9,
+    rgb(8, 8, 215),
+    #7623d5,
+    #5e23d5,
+    #2367d5,
+    rgb(8, 8, 215),
+    rgb(1, 1, 47)
+  ); */
+  background: linear-gradient(
+    45deg,
+    rgb(7, 1, 124),
+    rgb(44, 44, 231),
+    rgb(8, 52, 210),
+    rgb(20, 20, 216),
+    #5e23d5,
+    #7623d5,
+    #2367d5,
+    #23a6d5,
+    #23d2d5,
+    #4afbfe,
+    /* #02f5f9, */
+    #8bf9fa
+  );
+  /* background: linear-gradient(135deg,rgb(1, 1, 47),rgb(1, 1, 129),rgb(24, 24, 203),rgb(15, 76, 191),rgb(24, 24, 203),rgb(1, 1, 129),rgb(1, 1, 47)); */
+  /*  #ff8a00, #e52e71, #8a2be2, #8a2be2,#e52e71,#ff8a00 */
+  background-size: 1000% 1000%;
+  animation: gradientAnimation 5s linear alternate infinite;
+}
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}

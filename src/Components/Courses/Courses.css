@@ -1,0 +1,25 @@
+.Course_Main {
+  /* background-color: red; */
+}
+
+.courses_banner {
+  height: 140px;
+  display: grid;
+  color: #fff;
+  font-size: 1.8rem;
+  padding-left: 100px;
+  background: linear-gradient(to right, rgb(3, 3, 75), rgb(15, 15, 154));
+}
+.CourseTitles {
+  display: grid;
+  margin: 20px 10%;
+  row-gap: 20px;
+  justify-content: center;
+  /* background-color: red; */
+  grid-template-columns: repeat(2, 1fr);
+}
+.CourseLink > img {
+  width: 100%;
+  background-color: #fff;
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+}

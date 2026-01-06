@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Petrona:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+.about_header {
+  font-size: 1.05rem;
+  text-align: center;
+  padding: 100px 0px 0px 0px;
+}
+.about_main_img {
+  height: 450px;
+}
+.about_main_img > img {
+  height: 100%;
+}
+.about_main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 90%;
+  margin: 35px auto;
+  flex-direction: row-reverse;
+  /* background-color: #f7f7f7; */
+}
+.about_main_text {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0px;
+  order: 2;
+  flex-direction: column;
+}
+.about_main_text h2 {
+  color: transparent;
+  background-clip: text;
+  background-image: linear-gradient(to bottom, rgb(3, 3, 87) 5%, blue);
+  font-size: 2rem;
+  /* background-color: red; */
+  display: inline;
+}
+.about_main_text p {
+  
+  padding: 20px;
+  text-align: justify;
+  font-size: 1.25rem;
+  line-height: 30px;
+  text-indent: 50px;
+  font-family: "Petrona", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.AboutHeading {
+  color: #fff;
+  text-align: center;
+  padding: 40px;
+  font-size: 1.85rem;
+  line-height: 40px;
+}
+
+.Blank_banner {
+  height: 200px;
+  width: 100%;
+  margin-bottom: 100px;
+  /* background-image: linear-gradient(120deg, #4facfe, #00f2fe); */
+  /* background-image: linear-gradient(#0f1473, #0f1473); */
+  background-image: linear-gradient(to right, rgb(3, 3, 75), rgb(15, 15, 154));
+  /* position: relative; */
+}
+
+.AboutBanner {
+  width: 100%;
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+  font-size: 1.25rem;
+
+  /* background: linear-gradient(120deg, #4facfe, #00f2fe); */
+}
+.CounterHead {
+  /* background-color: rgb(2, 202, 252); */
+
+  /* background-image: linear-gradient(270deg, #026ac5, #33e7f1); */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  padding: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  /* gap: 50px; */
+  width: 80%;  
+  background-color: #fff;
+  color: rgb(3, 3, 75);
+  transform: translateY(-60px);
+}
+
+.counters {
+  font-family: "Manrope", serif;
+  font-optical-sizing: auto;
+
+  display: grid;
+  /* justify-content: center; */
+  text-align: center;
+  position: relative;
+  /* font-family: "Petrona", serif; */
+
+  font-style: normal;
+  line-height: 35px;
+}
+.counters h2 {
+  font-size: 2rem;
+}
+
+.counters:not(:nth-child(1))::after {
+  position: absolute;
+  top: -10px;
+  content: "";
+  height: 140%;
+  width: 1px;
+  background-color: rgb(194, 184, 184);
+}
+.CounterDesign {
+  display: block;
+}
+.about_nurture
+{
+  margin-top: 200px !important;
+}
+@media all and (max-width: 1400px) {
+  /*  */
+}
+@media all and (max-width: 1200px) {
+}
+@media all and (max-width: 1024px) {
+}
+
+@media all and (max-width: 768px) {
+}
+
+@media all and (max-width: 540px) {
+  .about_header {
+    padding: 20px 0px 0px 0px;
+  }
+  .about_header > h1 {
+    padding: 0px;
+    display: block;
+    width: 100%;
+  }
+  .about_header span {
+    margin-top: 10px;
+    width: 100%;
+    display: block;
+  }
+  .about_main {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 5px;
+  }
+  .Blank_banner {
+    display: none;
+    
+  }
+
+  .about_main_text h2 {
+    margin: 10px 0px;
+    text-align: center;
+    display: block;
+  }
+  .about_main_img {
+    height: 280px;
+    width: 100%;
+    margin: auto;
+  }
+  .about_main_text {
+    /* background-color: red; */
+    margin: 0px;
+    padding: 0px;
+  }
+  .about_main_text p {
+    /* background-color: green; */
+    width: 100%;
+    margin: auto;
+    font-size: 1.05rem;
+  }
+
+  .CounterHead {
+    /* background-image: linear-gradient(
+      to right,
+      rgb(3, 3, 75),
+      rgb(15, 15, 154)
+    ); */
+    background-color: #2878eb;
+    color: #fff;
+    grid-template-columns: 1fr;
+    column-gap: 20px;
+    transform: translateY(0px);
+    width: 100%;
+    padding: 20px 0px;
+  }
+  .counters:not(:nth-child(1))::after {
+    display: none;
+  }
+  .counters {
+    /* margin: 20px; */
+    padding: 10px;
+
+    /* margin: 5px 0px; */
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+  }
+  .counters h2 {
+    font-size: 1.95rem;
+  }
+  .counters p {
+    font-size: 1rem;
+  }
+  .CounterHead > h1 {
+    font-size: 2rem;
+    padding-top: 35px;
+    margin-bottom: 30px;
+    text-align: center;
+    display: block;
+    width: 100%;
+  }
+}

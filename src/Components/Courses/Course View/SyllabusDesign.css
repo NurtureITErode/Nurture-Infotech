@@ -1,0 +1,427 @@
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap");
+
+.courseNameMain {
+  min-height: 100vh;
+  font-family: "ABeeZee", sans-serif;
+}
+#particles {
+  position: absolute;
+}
+.courseNameBanner {
+  height: 300px;
+  display: flex;
+  /* background-image: url("../../../../public/assets/Images/Course Images/Course Items/python-bg.png"); */
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 1000% 1000%;
+  animation: gradientAnimation 4s linear alternate infinite;
+}
+.course_Details_img {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 90%;
+  margin: auto;
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.course_Details_img h2 {
+  font-size: 1.4rem;
+}
+.courseName {
+  color: #fff;
+  width: 70%;
+  margin: auto;
+}
+.courseName h2 {
+  padding: 0px;
+  margin: 20px 0px;
+  font-size: 2.2rem;
+}
+.courseDetails {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  position: absolute;
+  background-color: #fff;
+  height: auto;
+  padding: 23px 5px;
+  width: 340px;
+  right: 15%;
+  top: 200px;
+  border-radius: 15px;
+  font-family: "ABeeZee", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.Courseduration {
+  padding: 20px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.courseHR {
+  width: 80%;
+  margin: auto;
+}
+.hr {
+  border: 1px solid rgb(240, 231, 231); /* Change the color and style as needed */
+  width: 100%;
+}
+.CourseJoin {
+  display: flex;
+  justify-content: center;
+}
+.CourseJoin > button {
+  height: 40px;
+  width: 75%;
+  border: none;
+  border-radius: 60px;
+  background: linear-gradient(to right, rgb(11, 11, 132), rgb(1, 1, 32));
+}
+.CourseJoin > button > span {
+  color: #fff;
+  font-family: "ABeeZee", sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+}
+.CourseJoinWhatsapp {
+  display: flex;
+  justify-content: center;
+}
+.CourseJoinWhatsapp > button {
+  height: 40px;
+  width: 75%;
+  border: none;
+  border-radius: 60px;
+  margin: 10px;
+  background: linear-gradient(to right, #25d366, #128c7e);
+}
+.CourseJoinWhatsapp > button > span {
+  color: #fff;
+  font-family: "ABeeZee", sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+}
+.CourseJoinWhatsapp > button:hover,
+.CourseJoin > button:hover {
+  cursor: pointer;
+}
+.CourseJoinWhatsapp > button:hover span {
+  transform: translateX(100px);
+}
+.CourseSyllabus {
+  max-width: 60%;
+  margin: 50px 5%;
+}
+.CourseSyllabus h2 {
+  margin: 0px;
+  font-size: 1.8rem;
+}
+.CourseSyllabus p {
+  text-align: justify;
+  padding: 20px 10px;
+  font-size: 1.05rem;
+  line-height: 30px;
+  text-indent: 70px;
+}
+.courseul {
+  display: block;
+  list-style-type: none;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+  unicode-bidi: isolate;
+}
+.courseul li {
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 15px;
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+.courseul li:before {
+  content: "\f00c";
+  position: absolute;
+  left: 0;
+  top: 3px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 10px;
+  line-height: 20px;
+  background: #2a60a9;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.courseListitem {
+  margin: 20px 50px;
+}
+.CourseAccordionContainer {
+  max-width: 100%;
+  padding: 30px 20px 10px 0px;
+  margin: 50px 5%;
+}
+.courseAccordion {
+  margin: 20px 20px;
+  display: grid;
+  grid-template-columns: 70% 15%;
+}
+.relatedCoursediv {
+  margin: 0px;
+  padding: 20px;
+  height: 300px;
+  width: 340px;
+  position: relative;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+.relatedCoursediv h1 {
+  margin: 20px 0px;
+}
+.relatedcourseList {
+  display: flex;
+  flex-direction: column;
+}
+.relatedcourseList > span {
+  padding: 10px;
+  font-size: 1.1rem;
+}
+.realtedCourseBanner {
+}
+.Joinnurture {
+  max-width: 100%;
+  padding: 30px 20px 10px 0px;
+  margin: 50px 5%;
+}
+.CourseAccordionContainer > h2 {
+  margin: 0px;
+  font-size: 1.8rem;
+}
+.Joinnurture > h2 {
+  margin: 0px;
+  font-size: 1.8rem;
+}
+.whyus {
+  width: 75%;
+  margin: 40px auto;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  display: grid;
+  row-gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+}
+.whybox1 {
+}
+.whyus > div {
+  width: 80%;
+  transform: scale(0.85);
+  padding: 30px 10px;
+  text-align: justify;
+  margin: 20px auto;
+  /* border: 1px dashed #128c7e; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  /* box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;    */
+}
+.whyus > div h3 {
+  text-align: center;
+  margin: 5px;
+  padding-top: 10px;
+}
+.whyus > div p {
+  padding: 5px 5px 5px 5px;
+}
+.studentWorked,
+.coursecareer {
+  max-width: 100%;
+  padding: 30px 20px 10px 0px;
+  margin: 50px 5%;
+}
+.studentWorked h2,
+.coursecareer h2 {
+  margin: 0px;
+  font-size: 1.8rem;
+}
+.CareerPath {
+  width: 50%;
+  /* background-color: antiquewhite; */
+  /* border: 1px dashed #128c7e; */
+  margin: 20px;
+}
+.CareerPath > ul {
+  /* list-style: none; */
+  display: grid;
+  margin: 25px;
+
+  grid-template-columns: repeat(3, 1fr);
+}
+.CareerPath > ul > li {
+  font-size: 1.2rem;
+  padding: 5px 10px;
+}
+.comp2 {
+  display: none;
+}
+.CourseSyllabus > h2,
+.Joinnurture > h2,
+.coursecareer > h2,
+.studentWorked > h2 {
+  text-transform: uppercase;
+}
+.relatedcourseList a {
+  text-decoration: none;
+  color: #000;
+}
+.CourseJoinWhatsapp a {
+  text-decoration: none;
+  color: #fff;
+}
+
+@media all and (max-width: 1400px) {
+  .courseDetails {
+    transform: scale(0.95);
+    right: 10%;
+  }
+  .CourseSyllabus {
+    transform: scale(0.95);
+    margin: 50px 50px;
+  }
+  .whyus {
+    width: 85%;
+  }
+  .whyus > div {
+    padding: 20px 10px;
+  }
+  .CareerPath > ul > li {
+    font-size: 1.05rem;
+  }
+  .CareerPath {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 1200px) {
+}
+
+@media all and (max-width: 1024px) {
+  .courseDetails {
+  }
+  .comp2 {
+    display: block;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .Joinnurture h2 {
+    margin-bottom: 30px;
+  }
+  .courseNameBanner h2 {
+    font-size: 1.5rem;
+  }
+  .courseNameBanner {
+    position: relative;
+    height: 200px;
+  }
+  .courseDetails {
+    top: 100px;
+    left: 20px;
+    position: absolute;
+    transform: scale(0.8);
+    z-index: 3;
+  }
+  .CourseSyllabus {
+    max-width: 90%;
+    margin: 650px auto auto auto;
+  }
+  .CourseSyllabus h2 {
+    font-size: 1.7rem;
+  }
+  .courseul {
+    margin: 20px 0px;
+    padding: 0px;
+  }
+  .CourseDetailsAlign {
+    width: 100%;
+  }
+  .CourseAccordionContainer {
+    max-width: 100%;
+    margin: 0px 10px;
+  }
+  .courseAccordion {
+    margin: 2px;
+  }
+  .relatedCoursediv {
+    display: none;
+  }
+  .courseAccordion {
+    grid-template-columns: 100%;
+  }
+  .whyus {
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .CareerPath > ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+  }
+  .comp1 {
+    display: none;
+  }
+  .comp2 {
+    display: block;
+  }
+  .cmplogos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    margin: 30px auto;
+    gap: 40px;
+  }
+  .cmplogos > img {
+    transform: scale(1.1);
+    padding: 15px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+      rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+      rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  }
+  .studentWorked,
+  .coursecareer {
+    margin: 0px 5%;
+    padding: 0px 0px 10px 0px;
+  }
+}
+
+@media all and (max-width: 540px) {
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}

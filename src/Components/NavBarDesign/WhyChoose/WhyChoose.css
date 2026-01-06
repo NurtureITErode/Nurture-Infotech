@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+.WCMain {
+  min-height: 100vh;
+  /* height: 230vh; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 100%;
+  /* background: #e0e0e0; */
+  margin: auto;
+}
+.WCfirst-content span
+{
+  text-transform: capitalize;  
+}
+.WCHead {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 2.4rem;
+}
+
+.mainFrame {
+  /* border: 2px solid; */
+
+  padding-top: 50px;
+  width: 100%;
+  height: 750px;
+  margin: auto;
+
+}
+
+.WCrow {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 80%;
+  margin: 100px;
+
+  
+}
+
+.WCcard {
+  width: 270px;
+  margin: 10px 20px;
+  height: 300px;
+  transition: all 0.4s;
+  border-radius: 30px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  overflow: hidden;
+  
+  /* background-color: #ffffff; */
+  /* background: #e0e0e0; */
+  /* box-shadow: 15px 15px 30px #bebebe,
+             -15px -15px 30px #ffffff; */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.WCcard:hover {
+  border-radius: 15px;
+  cursor: pointer;
+  transform: scale(1.1);
+  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.705);
+  /* background: rgb(103, 151, 255); */
+}
+
+.WCfirst-content {
+  height: 100%;
+  width: 100%;
+  transition: all 0.4s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  border-radius: 15px;
+
+}
+.WCfirst-content  > span
+{
+  position: relative;
+  top: -4px;
+  width: 100%;
+  height: 90px;
+  margin: 0px;
+  color: #fff;
+  text-align: center;
+  line-height: 90px;
+  background-image: linear-gradient(to left, rgb(6, 6, 173),rgb(0, 0, 169) );
+  box-shadow:  yellow 10px 50px;
+  /* rgb(63, 231, 249) */
+}
+.WCcard:hover .WCfirst-content {
+  height: 0px;
+  opacity: 0;
+}
+
+.WCsecond-content {
+  margin: 0px;
+  padding: 0px;
+  height: 0%;
+  width: 100%;
+  opacity: 0;
+  display: flex;
+  padding: 0px 20px ;
+  text-align: justify;
+  margin-top: 0px;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 15px;
+  transition: all 0.4s;
+  font-size: 0px;
+  
+  transform: rotate(90deg) scale(-1);
+ 
+}
+
+
+.WCsecond-content h1  
+{
+
+ text-align: center;
+ font-weight: 500;
+ font-size: 2rem;
+ margin: 0px;
+ 
+}
+.WCsecond-content span
+{
+  font-size: 1rem !important;
+  font-weight: normal;
+  margin: 0px;
+  padding-top: 20px;
+  font-family: 'Nunito', sans-serif;
+}  
+.WCcard:hover .WCsecond-content {
+  opacity: 1;
+  height: 100%;
+  font-size: 1.8rem;
+  transform: rotate(0deg);
+}
+
+.WCCard_image {
+  padding: 10px;
+  height: 210px;
+  width: 210px;
+  border-radius: 100px !important;
+}
+
+.WCCard_image>img {
+  height: 100%;
+  width: 100%;
+}
+
+.WCCard_second{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.WCCard_image_second{
+  padding: 0px;
+  height: 150px;
+  width: 150px;
+
+}
+.WCCard_image_second>img {
+  height: 100%;
+  width: 100%;
+}
+
+@media all and (min-width:1400px) {
+  .WCMain {
+    margin-left: 5%;
+  }
+ 
+}
+
+@media all and (max-width:1400px) {
+
+  .WCcard {
+    width: 300px;
+    height: 350px;
+    font-size: 1.35rem;
+    font-weight: 500;    
+
+
+  }
+
+  .WCCard_image {
+    height: 220px;
+    width: 200px;
+  }
+
+}
+
+@media all and (max-width:1200px) {
+  
+
+  .WCCard_image {
+    padding: 10px;
+    height: 250px;
+    width: 250px;
+  }
+}
+
+@media all and (max-width:1024px) {
+
+
+}
+
+@media all and (max-width:768px) {
+
+  .WCrow {
+    width: auto;
+
+  }
+
+  .WCcard {
+    width: 300px;
+    height: 300px;
+    font-size: 1.1rem;
+  }
+
+  .WCCard_image {
+    height: 250px;
+    width: 300px;
+  }
+}
+
+@media all and (max-width:540px) {
+  .WCrow {
+    width: auto;
+    font-size: 1.2rem;
+
+  }
+
+  .WCcard {
+    min-width: 300px;
+    height: 300px;
+  }
+  .WCCard_image
+  {
+    height: 180px;
+    width: 220px;
+  }
+  
+}
