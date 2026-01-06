@@ -1,0 +1,59 @@
+.enquire-banner {
+  width: 75%;
+  margin: 4% auto;
+  background-image: linear-gradient(-155deg, #150898, #030c31);
+  display: grid;
+  padding: 3% 0;
+  place-content: center;
+  box-shadow: inset 15px 8px 10px rgba(25, 0, 255, 0.1),
+    inset -15px -8px 10px rgba(9, 0, 248, 0.1);
+    transition: 0.2s;
+}
+
+.enquire-banner h1 {
+  color: #ffffff;
+}
+
+.enquire-banner:hover
+{
+  width: 100%;
+}
+
+@media (max-width: 1200px) {
+  .enquire-banner {
+    width: 60%;
+    padding: 4% 2rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .enquire-banner {
+    width: 70%;
+    margin: 5% auto;
+    padding: 4% 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .enquire-banner {
+    width: 85%;
+    padding: 5% 2rem;
+    margin: 6% auto;
+  }
+
+  .enquire-banner h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 540px) {
+  .enquire-banner {
+    width: 90%;
+    margin: 8% auto;
+    padding: 6% 2rem;
+  }
+
+  .enquire-banner h1 {
+    font-size: 1.2rem;
+  }
+}

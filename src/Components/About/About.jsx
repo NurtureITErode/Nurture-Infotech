@@ -14,7 +14,7 @@ const About = () => {
     "./assets/Images/About/Testmonial 5.png",
     "./assets/Images/About/Testmonial 6.png",
   ];
-  
+
   return (
     <div>
       <header className="about_header">
@@ -42,54 +42,54 @@ const About = () => {
             </p> */}
             <h1 id="ihead">Elevate Your  <span id="intern-text">Career </span> Through Nurture Infotech <span id="intern-text"></span></h1>
           </div>
-          <p style={{padding:"50px 10px"}}>Elevate your life with Nurture Infotech! Our comprehensive programs in Python, Digital Marketing, and programming offer transformative learning experiences. Master essential skills, unlock career opportunities, and enrich your future. Join us on a journey of growth and success through the world of IT and digital excellence.</p>
+          <p style={{ padding: "50px 10px" }}>Elevate your life with Nurture Infotech! Our comprehensive programs in Python, Digital Marketing, and programming offer transformative learning experiences. Master essential skills, unlock career opportunities, and enrich your future. Join us on a journey of growth and success through the world of IT and digital excellence.</p>
         </section>
         <section className="about_main_img">
-          <img src="./assets/Images/About/businessman.png"></img>
+          <img src="src/assets/Images/About/businessman.png" alt="businessman"></img>
         </section>
       </section>
       <section className="Blank_banner">
         <h1 className="AboutHeading">Our Strength in Numbers
-          
-           </h1>
+
+        </h1>
         {/* <h1>Most-Leading and Trusted</h1> */}
-         <section className="counterBanner">
-        <section className="AboutBanner">
-          <div className="CounterHead">
-            <div className="counters">
-              <h2>
-                <CountUp start={0} end={5000}></CountUp>+
-              </h2>
-              <p> Learners </p> 
+        <section className="counterBanner">
+          <section className="AboutBanner">
+            <div className="CounterHead">
+              <div className="counters">
+                <h2>
+                  <CountUp start={0} end={5000}></CountUp>+
+                </h2>
+                <p> Learners </p>
+              </div>
+              <div className="counters">
+                {" "}
+                <h2>
+                  <CountUp start={0} end={3000}></CountUp>+
+                </h2>
+                <p>Reviews</p>
+              </div>
+              <div className="counters">
+                {" "}
+                <h2>
+                  <CountUp start={0} end={150}></CountUp>+
+                </h2>
+                <p>Courses</p>
+              </div>
+              <div className="counters">
+                {" "}
+                <h2>
+                  <CountUp start={0} end={2000}></CountUp>+
+                </h2>
+                <p>Projects</p>
+              </div>
             </div>
-            <div className="counters">
-              {" "}
-              <h2>
-                <CountUp start={0} end={3000}></CountUp>+
-              </h2>
-              <p>Reviews</p>
-            </div>
-            <div className="counters">
-              {" "}
-              <h2>
-                <CountUp start={0} end={150}></CountUp>+
-              </h2>
-              <p>Courses</p>
-            </div>
-            <div className="counters">
-              {" "}
-              <h2>
-                <CountUp start={0} end={2000}></CountUp>+
-              </h2>
-              <p>Projects</p>
-            </div>
-          </div>
+          </section>
+
         </section>
-      
       </section>
-      </section> 
-     
-        <section className="Joinnurture about_nurture">
+
+      <section className="Joinnurture about_nurture">
         <h2>What makes Nurture different</h2>
         <section className="whyus">
           <div className="whybox1">
@@ -339,9 +339,9 @@ const About = () => {
 
       <section>
         <MissionInfographic></MissionInfographic>
-        
+
       </section>
-         <section className="studentWorked">
+      <section className="studentWorked">
         <h2>Our Students work at</h2>
         <div className="comp1">
           <Company></Company>
@@ -349,7 +349,7 @@ const About = () => {
         <div className="comp2">
           <div className="cmplogos">
             {Companylogos.map((e) => {
-              return <img src={e.src}></img>;
+              return <img src={e.src} alt="logo"></img>;
             })}
           </div>
         </div>

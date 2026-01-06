@@ -21,7 +21,7 @@ function Home() {
             </div>
           </div>
           <div className="bannerImg">
-            <img src="./assets/banner2.webp" className="bannerImg_size" />
+            <img src="src/assets/banner2.webp" className="bannerImg_size" alt="banner" />
           </div>
 
         </div>

@@ -844,13 +844,13 @@ function Angular() {
         <div className="comp1">
           <Company></Company>
         </div>
-        <div className="comp2">
+        {/* <div className="comp2">
           <div className="cmplogos">
             {Companylogos.map((e) => {
               return <img src={e.src}></img>;
             })}
           </div>
-        </div>
+        </div> */}
       </section>
     </div>
   );
