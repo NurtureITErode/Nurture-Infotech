@@ -9,7 +9,7 @@ const MissionInfographic = () => {
 
           <div className="mv_c1_text2">WHO WE ARE</div>
 
-          <div className="mv_c1_text3" style={{textAlign:"justify",fontWeight:400}}>
+          <div className="mv_c1_text3" style={{ textAlign: "justify", fontWeight: 400 }}>
             <p>
               Established in 2010, Nurture Institute has evolved into a leading
               IT education and training hub. Our trending courses span
@@ -37,7 +37,7 @@ const MissionInfographic = () => {
         <div className="mv_child2">
           <div className="mv_c2_1">
             <div className="mv_c2_icon1">
-              <img src="./assets/Images/About/target.svg"></img>
+              <img src="src/assets/Images/About/target.svg"></img>
             </div>
             <div className="mv_c2_text1">Mission</div>
             <div className="mv_c2_text2">
@@ -49,7 +49,7 @@ const MissionInfographic = () => {
 
           <div className="mv_c2_2">
             <div className="mv_c2_icon2">
-              <img src="./assets/Images/About/vision.png"></img>
+              <img src="src/assets/Images/About/vision.png"></img>
             </div>
             <div className="mv_c2_text3"> vision </div>
             <div className="mv_c2_text4">
@@ -60,7 +60,7 @@ const MissionInfographic = () => {
 
           <div className="mv_c2_3">
             <div className="mv_c2_icon3">
-              <img src="./assets/Images/About/goal.png"></img>
+              <img src="src/assets/Images/About/goal.png"></img>
             </div>
             <div className="mv_c2_text5">Goals</div>
             <div className="mv_c2_text6">
@@ -72,7 +72,7 @@ const MissionInfographic = () => {
 
           <div className="mv_c2_4">
             <div className="mv_c2_icon4">
-              <img src="./assets/Images/About/new-ideas-in-process.png"></img>
+              <img src="src/assets/Images/About/new-ideas-in-process.png"></img>
             </div>
             <div className="mv_c2_text7">Startergy</div>
             <div className="mv_c2_text8">

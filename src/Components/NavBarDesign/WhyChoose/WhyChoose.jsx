@@ -8,17 +8,17 @@ function WhyChoose() {
                 <div className='WCrow'>
                     <div class="WCcard">
                         <div class="WCfirst-content">
-                          
+
 
                             <div className='WCCard_image'>
-                                <img src='./assets/images/trainers1.jpg' ></img>
+                                <img src='src/assets/images/trainers1.jpg' ></img>
                             </div>
                             <span> Expert Trainers</span>
                         </div>
                         <div class="WCsecond-content">
                             <div className='WCCard_second'>
                                 <div className='WCCard_image_second'>
-                                    <img src='./assets/images/trainers1.jpg' ></img>
+                                    <img src='src/assets/images/trainers1.jpg' ></img>
                                 </div>
                             </div>
                             <h1> Expert Trainers</h1>
@@ -27,9 +27,9 @@ function WhyChoose() {
                     </div>
                     <div class="WCcard">
                         <div class="WCfirst-content">
-                           
+
                             <div className='WCCard_image'>
-                                <img src='./assets/images/flexibleTraining.jpg' ></img>
+                                <img src='src/assets/images/flexibleTraining.jpg' ></img>
                             </div>
                             <span>Flexiable Timing</span>
                         </div>
@@ -39,16 +39,16 @@ function WhyChoose() {
                     </div>
                     <div class="WCcard">
                         <div class="WCfirst-content">
-                           
+
                             <div className='WCCard_image'>
-                                <img src='./assets/images/placement.jpg' ></img>
+                                <img src='src/assets/images/placement.jpg' ></img>
                             </div>
                             <span>Placement Assisance</span>
                         </div>
                         <div class="WCsecond-content">
-                        <div className='WCCard_second'>
+                            <div className='WCCard_second'>
                                 <div className='WCCard_image_second'>
-                                    <img src='./assets/images/placement.jpg' ></img>
+                                    <img src='src/assets/images/placement.jpg' ></img>
                                 </div>
                             </div>
                             <h1>Placement Support</h1>
@@ -57,9 +57,9 @@ function WhyChoose() {
                     </div>
                     <div class="WCcard">
                         <div class="WCfirst-content">
-                          
+
                             <div className='WCCard_image'>
-                                <img src='./assets/images/liveproject.jpg' ></img>
+                                <img src='src/assets/images/liveproject.jpg' ></img>
                             </div>
                             <span>Workin Live Project</span>
                         </div>
@@ -70,11 +70,11 @@ function WhyChoose() {
                     </div>
                     <div class="WCcard">
                         <div class="WCfirst-content">
-                            
+
                             <div className='WCCard_image'>
-                                <img src='./assets/images/cost.jpg' ></img>
+                                <img src='src/assets/images/cost.jpg' ></img>
                             </div>
-                            <span>Cost</span>
+                            <span>Cost</span>   
                         </div>
                         <div class="WCsecond-content">
                             <h1>Affordable fees</h1>
@@ -84,6 +84,9 @@ function WhyChoose() {
                     </div>
                     <div class="WCcard">
                         <div class="WCfirst-content">
+                            <div className='WCCard_image'>
+                                <img src='src/assets/images/cost.jpg' ></img>
+                            </div>
                             <span>Lab Support</span>
                         </div>
                         <div class="WCsecond-content">

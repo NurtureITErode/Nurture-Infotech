@@ -26,7 +26,7 @@ function Hireus() {
         <div className="mainScreen">
           <div className="hireLogo">
             <img
-              src="./assets/Images/Hire/rs.png"
+              src="src/assets/Images/Hire/rs.png"
               className="hirelogoImg"
               alt="hireLogo"
             ></img>
@@ -50,7 +50,7 @@ function Hireus() {
 
         <div className="TrainingModel">
           <div className="TrainingModelHeading">
-         
+
             <h1 className="hireHeadingtwo">
               We strive to provide the best service for our corporate partners.
             </h1>
@@ -66,7 +66,7 @@ function Hireus() {
               </div>
               <div className="image-container-mobile">
                 <img
-                  src={`./assets/Images/Hire/hire1.png`}
+                  src={`src/assets/Images/Hire/hire1.png`}
                   alt={`Image ${selectedTag}`}
                 />
               </div>
@@ -80,7 +80,7 @@ function Hireus() {
               </div>
               <div className="image-container-mobile">
                 <img
-                  src={`./assets/Images/Hire/hire2.png`}
+                  src={`src/assets/Images/Hire/hire2.png`}
                   alt={`Image ${selectedTag}`}
                 />
               </div>
@@ -98,19 +98,19 @@ function Hireus() {
                 />
               </div>
             </div>
-            
+
             <div className="TrainingModelimg">
               {selectedTag ? (
                 <div className="image-container">
                   <img
-                    src={`./assets/images/hire/${selectedTag}.png`}
+                    src={`src/assets/images/hire/${selectedTag}.png`}
                     alt={`Image ${selectedTag}`}
                   />
                 </div>
               ) : (
                 <div className="image-container">
                   <img
-                    src={`./assets/images/hire/hire1.png`}
+                    src={`src/assets/images/hire/hire1.png`}
                     alt={`Image ${selectedTag}`}
                   />
                 </div>
@@ -120,11 +120,11 @@ function Hireus() {
         </div>
 
         <div className="HireForm">
-  
+
           <h1 className="HRHeading">Hire our Trainees</h1>
           <div className="HRForm">
             <div className="hrimg">
-              <img src="./assets/Images/Hire/requirement.gif"></img>
+              <img src="src/assets/Images/Hire/requirement.gif" alt="gif"></img>
             </div>
             <div className="FormDesign">
               <h1 className="FormDesignHeading">Hire our Trainees</h1>
