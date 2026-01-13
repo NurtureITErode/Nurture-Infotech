@@ -33,7 +33,6 @@
     }
 }
 
-/* ===== Testimonials ===== */
 .testimonials {
     background-color: #e7e9e9;
     padding: 40px 20px;
@@ -108,27 +107,53 @@
 }
 
 .dots {
-    margin-top: 25px;
+    margin-top: 20px;
     display: flex;
     justify-content: center;
-    gap: 0.5rem;
-    padding: 5px;
+    gap: 15px;
 }
 
 .dot {
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 0;
     border: none;
-    background-color: #bbb;
+    background: transparent;
     cursor: pointer;
-    /* transition: 0.3s; */
+    position: relative;
 }
 
 .dot:hover {
     transform: scale(1.2);
 }
 
-.dot.active {
+.dot::before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #bbb;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.dot:hover::before {
+    transform: translate(-50%, -50%) scale(1.2);
+}
+
+.dot.active::before {
     background-color: #001367;
+}
+
+.dot:focus-visible {
+    outline: 2px solid #001367;
+    outline-offset: 4px;
+}
+
+@media (max-width: 540px) {
+    .bg_icon_test {
+        display: none;
+    }
 }

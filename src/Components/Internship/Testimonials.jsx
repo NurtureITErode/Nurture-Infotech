@@ -73,6 +73,8 @@ function Testimonials({ bgicon, bgicon3 }) {
                                     key={index}
                                     className={`dot ${index === current ? 'active' : ''}`}
                                     onClick={() => setCurrent(index)}
+                                    aria-label={`Go to testimonial ${index + 1}`}
+                                    aria-current={index === current ? "true" : undefined}
                                 />
                             ))}
                         </div>
