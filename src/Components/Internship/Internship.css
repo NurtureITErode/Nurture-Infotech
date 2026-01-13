@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
+* {
+  font-display: swap;
+}
+
 :root {
   --primary-blue: #026ac5;
   --gradient-start: #39a0fb;
@@ -8,7 +12,6 @@
   --input-bg: #e4ecec;
   --text-dark: #040D35;
 }
-
 
 @keyframes drawLine {
   to {
@@ -144,12 +147,8 @@
 
 .intern-banner {
   background: linear-gradient(to right bottom, var(--gradient-start), var(--gradient-end));
-  display: grid;
+  text-align: center;
   padding: 3% 0;
-  place-content: center;
-}
-
-.intern-banner h1 {
   color: white;
 }
 
@@ -278,10 +277,6 @@
   background-image: linear-gradient(155deg, #030c31, #150898);
 }
 
-.form-con-content h3 {
-  color: white;
-}
-
 .neoForm {
   border-radius: 34px;
   box-shadow: 13px 13px 20px #cbced1,
@@ -356,6 +351,18 @@
   width: 100%;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 #neoqua,
 #neocourse {
   width: 100%;
@@ -423,7 +430,7 @@
   line-height: 25px;
 }
 
-.intern-content h3 {
+.intern-content h2 {
   font-size: 24px;
   color: white;
 }
@@ -473,6 +480,9 @@
 }
 
 @media (max-width: 540px) {
+  .neoForm {
+    width: 100%;
+  }
 
   #neoname,
   #neonum,
@@ -493,5 +503,17 @@
   .neoIcon {
     height: 80px;
     width: 80px;
+  }
+
+  .bg_icon {
+    /* display: none; */
+  }
+
+  .intern_bg_icon {
+    display: none;
+  }
+
+  #ipara {
+    text-align: center;
   }
 }
