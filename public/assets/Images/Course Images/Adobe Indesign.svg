@@ -7,7 +7,7 @@
       }
 
       .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9, .cls-10, .cls-11, .cls-12, .cls-13, .cls-14, .cls-15, .cls-16, .cls-17, .cls-18, .cls-19, .cls-20, .cls-21, .cls-22, .cls-23, .cls-24, .cls-25, .cls-26, .cls-27, .cls-28, .cls-29, .cls-30, .cls-31, .cls-32, .cls-33, .cls-34, .cls-35, .cls-36, .cls-37, .cls-38, .cls-39, .cls-40 {
-        stroke-width: 0px;
+        strokeWidth: 0px;
       }
 
       .cls-2 {
@@ -161,11 +161,11 @@
 
       .cls-47 {
         stroke: #efae95;
-        stroke-width: .71px;
+        strokeWidth: .71px;
       }
 
       .cls-47, .cls-48, .cls-49, .cls-50 {
-        stroke-miterlimit: 10;
+        strokeMiterlimit: 10;
       }
 
       .cls-27 {
@@ -187,7 +187,7 @@
 
       .cls-48 {
         stroke: #fff;
-        stroke-width: 1.62px;
+        strokeWidth: 1.62px;
       }
 
       .cls-56 {
@@ -201,8 +201,8 @@
 
       .cls-49 {
         stroke: #fc8a8a;
-        stroke-linecap: round;
-        stroke-width: 1.42px;
+        strokeLinecap: round;
+        strokeWidth: 1.42px;
       }
 
       .cls-32 {
@@ -229,7 +229,7 @@
 
       .cls-50 {
         stroke: #000;
-        stroke-width: .43px;
+        strokeWidth: .43px;
       }
 
       .cls-36 {

@@ -7,7 +7,7 @@ import CourseDetails from "../NavBarDesign/Courses/CourseDetails";
 function Home() {
   return (
     <div>
-      <section class="landing-pg">
+      <section className="landing-pg">
 
         <div className="mainHome">
           <div className="mainHeader">

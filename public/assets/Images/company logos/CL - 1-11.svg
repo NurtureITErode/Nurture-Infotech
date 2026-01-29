@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 28.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 108 72" style="enable-background:new 0 0 108 72;" xml:space="preserve">
+	 viewBox="0 0 108 72" style="enableBackground:new 0 0 108 72;" xml:space="preserve">
 <style type="text/css">
 	
-		.st0{clip-path:url(#SVGID_00000177442668797869603860000016901634023530891711_);fill-rule:evenodd;clip-rule:evenodd;fill:#2A7CC9;}
+		.st0{clip-path:url(#SVGID_00000177442668797869603860000016901634023530891711_);fillRule:evenodd;clipRule:evenodd;fill:#2A7CC9;}
 	.st1{clip-path:url(#SVGID_00000160906308916613991120000011947583478649875890_);}
-	.st2{fill-rule:evenodd;clip-rule:evenodd;fill:#13ABDB;}
-	.st3{fill-rule:evenodd;clip-rule:evenodd;fill:#0071AE;}
+	.st2{fillRule:evenodd;clipRule:evenodd;fill:#13ABDB;}
+	.st3{fillRule:evenodd;clipRule:evenodd;fill:#0071AE;}
 	.st4{clip-path:url(#SVGID_00000178906646389188824300000013464873767548686723_);}
 	.st5{fill:#000048;}
-	.st6{fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_00000035520729092800371560000007628438960856691378_);}
-	.st7{fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_00000069360812534154427290000002812572617228335519_);}
-	.st8{fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_00000109010324345911635870000002668982339399457446_);}
-	.st9{fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_00000058570532687257757370000004183592108544304803_);}
+	.st6{fillRule:evenodd;clipRule:evenodd;fill:url(#SVGID_00000035520729092800371560000007628438960856691378_);}
+	.st7{fillRule:evenodd;clipRule:evenodd;fill:url(#SVGID_00000069360812534154427290000002812572617228335519_);}
+	.st8{fillRule:evenodd;clipRule:evenodd;fill:url(#SVGID_00000109010324345911635870000002668982339399457446_);}
+	.st9{fillRule:evenodd;clipRule:evenodd;fill:url(#SVGID_00000058570532687257757370000004183592108544304803_);}
 	.st10{clip-path:url(#SVGID_00000152230560421538081390000000450089758242174087_);fill:#0033A1;}
 	.st11{clip-path:url(#SVGID_00000071532875098193109520000006083209311519638694_);}
 	.st12{fill:#FFFFFF;}
@@ -25,13 +25,13 @@
 	.st18{fill:#FDB913;}
 	.st19{clip-path:url(#SVGID_00000044178689703091565820000001995938818819270810_);}
 	.st20{fill:#000096;}
-	.st21{fill-rule:evenodd;clip-rule:evenodd;fill:#000096;}
+	.st21{fillRule:evenodd;clipRule:evenodd;fill:#000096;}
 	.st22{clip-path:url(#SVGID_00000039825012810724081550000014792101098949852090_);}
-	.st23{fill-rule:evenodd;clip-rule:evenodd;fill:#D52E94;}
-	.st24{fill-rule:evenodd;clip-rule:evenodd;fill:#F8421E;}
-	.st25{fill-rule:evenodd;clip-rule:evenodd;fill:#DFD6AB;}
-	.st26{fill-rule:evenodd;clip-rule:evenodd;fill:#0C7CC4;}
-	.st27{fill-rule:evenodd;clip-rule:evenodd;fill:#64A9DA;}
+	.st23{fillRule:evenodd;clipRule:evenodd;fill:#D52E94;}
+	.st24{fillRule:evenodd;clipRule:evenodd;fill:#F8421E;}
+	.st25{fillRule:evenodd;clipRule:evenodd;fill:#DFD6AB;}
+	.st26{fillRule:evenodd;clipRule:evenodd;fill:#0C7CC4;}
+	.st27{fillRule:evenodd;clipRule:evenodd;fill:#64A9DA;}
 </style>
 <g>
 	<defs>
@@ -41,7 +41,7 @@
 		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
 	</clipPath>
 	
-		<path style="clip-path:url(#SVGID_00000065758129270649003310000001021317238777092542_);fill-rule:evenodd;clip-rule:evenodd;fill:#2A7CC9;" d="
+		<path style="clip-path:url(#SVGID_00000065758129270649003310000001021317238777092542_);fillRule:evenodd;clipRule:evenodd;fill:#2A7CC9;" d="
 		M103.8,16.7c-1.7,0-3.1,1.4-3.1,3.1c0,1.8,1.4,3.2,3.1,3.2c1.8,0,3.2-1.4,3.2-3.2C107,18.1,105.6,16.7,103.8,16.7z M103.8,17.1
 		c1.5,0,2.7,1.2,2.7,2.7c0,1.5-1.2,2.7-2.7,2.7c-1.5,0-2.7-1.2-2.7-2.7C101.2,18.3,102.4,17.1,103.8,17.1
 		C103.8,17.1,103.8,17.1,103.8,17.1z M37.8,17.4c-3.9,0-6.8,2.6-7.2,7.2h-3v2.3h3v21.8H34V26.8h7.6c-2.8,2.3-4.6,6-4.6,10.2
