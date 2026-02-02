@@ -1,0 +1,159 @@
+.bg_icon_test {
+    position: relative;
+}
+
+.bg_icon_test img {
+    width: 70px;
+    height: 70px;
+}
+
+.bg_icon_test .bg_icon_1 {
+    position: absolute;
+    left: 80px;
+    top: 70px;
+    animation: icon 1s infinite alternate linear;
+    z-index: 10;
+}
+
+.bg_icon_test .bg_icon_2 {
+    position: absolute;
+    top: 140px;
+    right: 80px;
+    animation: icon 1s infinite alternate linear;
+    z-index: 10;
+}
+
+@keyframes icon {
+    from {
+        transform: translateY(-25px);
+    }
+
+    to {
+        transform: translateY(25px);
+    }
+}
+
+.testimonials {
+    background-color: #e7e9e9;
+    padding: 40px 20px;
+    text-align: center;
+    margin: 3% 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.testimonials h2 {
+    color: #001367;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.testimonials blockquote {
+    background-color: #ffffff;
+    margin: 0 auto;
+    padding: 20px 30px;
+    max-width: 700px;
+    border-left: 5px solid #003366;
+    font-style: italic;
+    font-size: 1.2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    line-height: 1.9rem;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: 0.7s;
+}
+
+.testimonials blockquote.active {
+    opacity: 1;
+    transform: translateX(0);
+    position: relative;
+}
+
+.testimonials blockquote.prev {
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+.testimonials blockquote::before {
+    content: "“";
+    font-size: 3rem;
+    color: #003366;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+}
+
+.testimonials blockquote div {
+    margin-top: 15px;
+    font-weight: bold;
+    font-style: normal;
+    color: #555;
+}
+
+.testimonials blockquote span {
+    color: #03519f;
+}
+
+.dots {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.dot {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+}
+
+.dot:hover {
+    transform: scale(1.2);
+}
+
+.dot::before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #bbb;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.dot:hover::before {
+    transform: translate(-50%, -50%) scale(1.2);
+}
+
+.dot.active::before {
+    background-color: #001367;
+}
+
+.dot:focus-visible {
+    outline: 2px solid #001367;
+    outline-offset: 4px;
+}
+
+@media (max-width: 540px) {
+    .bg_icon_test {
+        display: none;
+    }
+}

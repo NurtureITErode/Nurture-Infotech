@@ -1,132 +1,158 @@
 [
-  {
-    "id": 1,
-    "src": "./assets/Images/Course Images/python.svg",
-    "navlink": "python"
-  },
-  {
-    "id": 2,
-    "src": "./assets/Images/Course Images/Django & Flask.svg",
-    "navlink": "react"
-  },
-  {
-    "id": 3,
-    "src": "./assets/Images/Course Images/Artboard 10.svg",
-    "navlink": "react"
-  },
-  {
-    "id": 4,
-    "src": "./assets/Images/Course Images/Artboard 4.svg",
-    "navlink": "react"
-  },
-  {
-    "id": 5,
-    "src": "./assets/Images/Course Images/Artboard 12.svg",
-    "navlink": "react"
-  },
-  {
-    "id": 6,
-    "src": "./assets/Images/Course Images/Artboard 2.svg",
-    "navlink": "react"
-  },
-  {
-    "id": 7,
-    "src": "./assets/Images/Course Images/Artboard 7.svg",
-    "navlink": "react"
-  },
-  {
-    "id": 8,
-    "src": "./assets/Images/Course Images/Artboard 8.svg",
-    "navlink": "react"
-  },
-  {
-    "id": 9,
-    "src": "./assets/Images/Course Images/Artboard 1.svg",
-    "navlink": "react"
-  },
-  {
-    "id": 10,
-    "src": "./assets/Images/Course Images/Artboard 11.svg",
-    "navlink": "react"
-  },
-  {
-    "id": 11,
-    "src": "./assets/Images/Course Images/Artboard 6.svg",
-    "navlink": "react"
-  },
-  {
-    "id": 12,
-    "src": "./assets/Images/Course Images/Artboard 5.svg",
-    "navlink": "react"
-  },
-  {
-    "id": 13,
-    "src": "./assets/Images/Course Images/Artboard 13.svg",
-    "navlink": "react"
-  },
-  {
-    "id": 14,
-    "src": "./assets/Images/Course Images/Artboard 14.svg",
-    "navlink": "react"
-  },
-  {
-    "id": 15,
-    "src": "./assets/Images/Course Images/Artboard 15.svg",
-    "navlink": "react"
-  },
-  {
-    "id": 16,
-    "src": "./assets/Images/Course Images/Artboard 16.svg",
-    "navlink": "react"
-  },
-  {
-    "id": 17,
-    "src": "./assets/Images/Course Images/Artboard 17.svg",
-    "navlink": "react"
-  },
-  {
-    "id": 18,
-    "src": "./assets/Images/Course Images/Artboard 18.svg",
-    "navlink": "react"
-  },
-  {
-    "id": 19,
-    "src": "./assets/Images/Course Images/Artboard 19.svg",
-    "navlink": "react"
-  },
-  {
-    "id": 20,
-    "src": "./assets/Images/Course Images/Artboard 20.svg",
-    "navlink": "react"
-  },
-  {
-    "id": 21,
-    "src": "./assets/Images/Course Images/Artboard 21.svg",
-    "navlink": "react"
-  },
-  {
-    "id": 22,
-    "src": "./assets/Images/Course Images/Artboard 22.svg",
-    "navlink": "react"
-  },
-  {
-    "id": 23,
-    "src": "./assets/Images/Course Images/Artboard 23.svg",
-    "navlink": "react"
-  },
-  {
-    "id": 24,
-    "src": "./assets/Images/Course Images/Artboard 24.svg",
-    "navlink": "react"
-  },
-  {
-    "id": 25,
-    "src": "./assets/Images/Course Images/Artboard 25.svg",
-    "navlink": "react"
-  },
-  {
-    "id": 26,
-    "src": "./assets/Images/Course Images/Artboard 26.svg",
-    "navlink": "react"
-  }
+    {
+        "id": 1,
+        "src": "/assets/Images/Course Images/Python.svg",
+        "navlink": "python",
+        "title": "Python"
+    },
+    {
+        "id": 2,
+        "src": "/assets/Images/Course Images/Python.svg",
+        "navlink": "java",
+        "title": "Java"
+    },
+    {
+        "id": 3,
+        "src": "/assets/Images/Course Images/Python.svg",
+        "navlink": "webdevelopment",
+        "title": "Web Development"
+    },
+    {
+        "id": 4,
+        "src": "/assets/Images/Course Images/Python.svg",
+        "navlink": "dataanalytics",
+        "title": "Data Analytics"
+    },
+    {
+        "id": 5,
+        "src": "/assets/Images/Course Images/Python.svg",
+        "navlink": "mernstack",
+        "title": "MERN Stack"
+    },
+    {
+        "id": 6,
+        "src": "/assets/Images/Course Images/Python.svg",
+        "navlink": "react",
+        "title": "React"
+    },
+    {
+        "id": 7,
+        "src": "/assets/Images/Course Images/Python.svg",
+        "navlink": "angular",
+        "title": "Angular"
+    },
+    {
+        "id": 8,
+        "src": "/assets/Images/Course Images/Python.svg",
+        "navlink": "softwaretesting",
+        "title": "Software Testing"
+    },
+    {
+        "id": 9,
+        "src": "/assets/Images/Course Images/Python.svg",
+        "navlink": "sql",
+        "title": "SQL"
+    },
+    {
+        "id": 10,
+        "src": "/assets/Images/Course Images/Python.svg",
+        "navlink": "powerbi",
+        "title": "Power BI"
+    },
+    {
+        "id": 11,
+        "src": "/assets/Images/Course Images/Python.svg",
+        "navlink": "adobeillustrator",
+        "title": "Adobe Illustrator"
+    },
+    {
+        "id": 12,
+        "src": "/assets/Images/Course Images/Python.svg",
+        "navlink": "adobephotoshop",
+        "title": "Adobe Photoshop"
+    },
+    {
+        "id": 13,
+        "src": "/assets/Images/Course Images/Python.svg",
+        "navlink": "meanstack",
+        "title": "MEAN Stack"
+    },
+    {
+        "id": 14,
+        "src": "/assets/Images/Course Images/Python.svg",
+        "navlink": "php",
+        "title": "PHP"
+    },
+    {
+        "id": 15,
+        "src": "/assets/Images/Course Images/Python.svg",
+        "navlink": "flutter",
+        "title": "Flutter"
+    },
+    {
+        "id": 16,
+        "src": "/assets/Images/Course Images/Python.svg",
+        "navlink": "firebase",
+        "title": "Firebase"
+    },
+    {
+        "id": 17,
+        "src": "/assets/Images/Course Images/Python.svg",
+        "navlink": "automationtesting",
+        "title": "Automation Testing"
+    },
+    {
+        "id": 18,
+        "src": "/assets/Images/Course Images/Python.svg",
+        "navlink": "coreldraw",
+        "title": "Corel Draw"
+    },
+    {
+        "id": 19,
+        "src": "/assets/Images/Course Images/Python.svg",
+        "navlink": "adobeindesign",
+        "title": "Adobe InDesign"
+    },
+    {
+        "id": 20,
+        "src": "/assets/Images/Course Images/Python.svg",
+        "navlink": "django",
+        "title": "Django/Flask"
+    },
+    {
+        "id": 21,
+        "src": "/assets/Images/Course Images/Python.svg",
+        "navlink": "tallyprime",
+        "title": "TallyPrime"
+    },
+    {
+        "id": 22,
+        "src": "/assets/Images/Course Images/Python.svg",
+        "navlink": "laravel",
+        "title": "Laravel"
+    },
+    {
+        "id": 23,
+        "src": "/assets/Images/Course Images/Python.svg",
+        "navlink": "machinelearning",
+        "title": "Machine Learning"
+    },
+    {
+        "id": 24,
+        "src": "/assets/Images/Course Images/Python.svg",
+        "navlink": "ethicalhacking",
+        "title": "Ethical Hacking"
+    },
+    {
+        "id": 25,
+        "src": "/assets/Images/Course Images/Python.svg",
+        "navlink": "ccna",
+        "title": "CCNA"
+    },
+    {
+        "id": 26,
+        "src": "/assets/Images/Course Images/Python.svg",
+        "navlink": "redhatlinux",
+        "title": "Redhat Linux"
+    }
 ]

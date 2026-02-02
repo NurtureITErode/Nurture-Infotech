@@ -4,9 +4,11 @@
   min-height: 100vh;
   font-family: "ABeeZee", sans-serif;
 }
+
 #particles {
   position: absolute;
 }
+
 .courseNameBanner {
   height: 300px;
   display: flex;
@@ -15,6 +17,7 @@
   background-size: 1000% 1000%;
   animation: gradientAnimation 4s linear alternate infinite;
 }
+
 .course_Details_img {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   width: 90%;
@@ -25,19 +28,23 @@
   align-items: center;
   flex-direction: column;
 }
+
 .course_Details_img h2 {
   font-size: 1.4rem;
 }
+
 .courseName {
   color: #fff;
   width: 70%;
   margin: auto;
 }
+
 .courseName h2 {
   padding: 0px;
   margin: 20px 0px;
   font-size: 2.2rem;
 }
+
 .courseDetails {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   position: absolute;
@@ -52,43 +59,52 @@
   font-weight: 400;
   font-style: normal;
 }
+
 .Courseduration {
   padding: 20px;
   align-items: center;
   display: flex;
   justify-content: space-between;
 }
+
 .courseHR {
   width: 80%;
   margin: auto;
 }
+
 .hr {
-  border: 1px solid rgb(240, 231, 231); /* Change the color and style as needed */
+  border: 1px solid rgb(240, 231, 231);
+  /* Change the color and style as needed */
   width: 100%;
 }
+
 .CourseJoin {
   display: flex;
   justify-content: center;
 }
-.CourseJoin > button {
+
+.CourseJoin>button {
   height: 40px;
   width: 75%;
   border: none;
   border-radius: 60px;
   background: linear-gradient(to right, rgb(11, 11, 132), rgb(1, 1, 32));
 }
-.CourseJoin > button > span {
+
+.CourseJoin>button>span {
   color: #fff;
   font-family: "ABeeZee", sans-serif;
   font-weight: 700;
   font-size: 0.9rem;
   letter-spacing: 2px;
 }
+
 .CourseJoinWhatsapp {
   display: flex;
   justify-content: center;
 }
-.CourseJoinWhatsapp > button {
+
+.CourseJoinWhatsapp>button {
   height: 40px;
   width: 75%;
   border: none;
@@ -96,28 +112,34 @@
   margin: 10px;
   background: linear-gradient(to right, #25d366, #128c7e);
 }
-.CourseJoinWhatsapp > button > span {
+
+.CourseJoinWhatsapp>button>span {
   color: #fff;
   font-family: "ABeeZee", sans-serif;
   font-weight: 700;
   font-size: 0.9rem;
   letter-spacing: 2px;
 }
-.CourseJoinWhatsapp > button:hover,
-.CourseJoin > button:hover {
+
+.CourseJoinWhatsapp>button:hover,
+.CourseJoin>button:hover {
   cursor: pointer;
 }
-.CourseJoinWhatsapp > button:hover span {
+
+.CourseJoinWhatsapp>button:hover span {
   transform: translateX(100px);
 }
+
 .CourseSyllabus {
   max-width: 60%;
   margin: 50px 5%;
 }
+
 .CourseSyllabus h2 {
   margin: 0px;
   font-size: 1.8rem;
 }
+
 .CourseSyllabus p {
   text-align: justify;
   padding: 20px 10px;
@@ -125,6 +147,7 @@
   line-height: 30px;
   text-indent: 70px;
 }
+
 .courseul {
   display: block;
   list-style-type: none;
@@ -135,6 +158,7 @@
   padding-inline-start: 40px;
   unicode-bidi: isolate;
 }
+
 .courseul li {
   position: relative;
   padding-left: 35px;
@@ -142,6 +166,7 @@
   line-height: 1.8;
   font-size: 1.05rem;
 }
+
 .courseul li:before {
   content: "\f00c";
   position: absolute;
@@ -170,16 +195,19 @@
 .courseListitem {
   margin: 20px 50px;
 }
+
 .CourseAccordionContainer {
   max-width: 100%;
   padding: 30px 20px 10px 0px;
   margin: 50px 5%;
 }
+
 .courseAccordion {
   margin: 20px 20px;
   display: grid;
   grid-template-columns: 70% 15%;
 }
+
 .relatedCoursediv {
   margin: 0px;
   padding: 20px;
@@ -191,32 +219,39 @@
     rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
     rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
 }
+
 .relatedCoursediv h1 {
   margin: 20px 0px;
 }
+
 .relatedcourseList {
   display: flex;
   flex-direction: column;
 }
-.relatedcourseList > span {
+
+.relatedcourseList>span {
   padding: 10px;
   font-size: 1.1rem;
 }
-.realtedCourseBanner {
-}
+
+.realtedCourseBanner {}
+
 .Joinnurture {
   max-width: 100%;
   padding: 30px 20px 10px 0px;
   margin: 50px 5%;
 }
-.CourseAccordionContainer > h2 {
+
+.CourseAccordionContainer>h2 {
   margin: 0px;
   font-size: 1.8rem;
 }
-.Joinnurture > h2 {
+
+.Joinnurture h2 {
   margin: 0px;
   font-size: 1.8rem;
 }
+
 .whyus {
   width: 75%;
   margin: 40px auto;
@@ -226,9 +261,10 @@
   row-gap: 20px;
   grid-template-columns: repeat(4, 1fr);
 }
-.whybox1 {
-}
-.whyus > div {
+
+.whybox1 {}
+
+.whyus>div {
   width: 80%;
   transform: scale(0.85);
   padding: 30px 10px;
@@ -244,55 +280,66 @@
     rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
   /* box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;    */
 }
-.whyus > div h3 {
+
+.whyus>div h3 {
   text-align: center;
   margin: 5px;
   padding-top: 10px;
 }
-.whyus > div p {
+
+.whyus>div p {
   padding: 5px 5px 5px 5px;
 }
+
 .studentWorked,
 .coursecareer {
   max-width: 100%;
   padding: 30px 20px 10px 0px;
   margin: 50px 5%;
 }
+
 .studentWorked h2,
 .coursecareer h2 {
   margin: 0px;
   font-size: 1.8rem;
 }
+
 .CareerPath {
   width: 50%;
   /* background-color: antiquewhite; */
   /* border: 1px dashed #128c7e; */
   margin: 20px;
 }
-.CareerPath > ul {
+
+.CareerPath>ul {
   /* list-style: none; */
   display: grid;
   margin: 25px;
 
   grid-template-columns: repeat(3, 1fr);
 }
-.CareerPath > ul > li {
+
+.CareerPath>ul>li {
   font-size: 1.2rem;
   padding: 5px 10px;
 }
+
 .comp2 {
   display: none;
 }
-.CourseSyllabus > h2,
-.Joinnurture > h2,
-.coursecareer > h2,
-.studentWorked > h2 {
+
+.CourseSyllabus h2,
+.Joinnurture h2,
+.coursecareer h2,
+.studentWorked h2 {
   text-transform: uppercase;
 }
+
 .relatedcourseList a {
   text-decoration: none;
   color: #000;
 }
+
 .CourseJoinWhatsapp a {
   text-decoration: none;
   color: #fff;
@@ -303,46 +350,53 @@
     transform: scale(0.95);
     right: 10%;
   }
+
   .CourseSyllabus {
     transform: scale(0.95);
     margin: 50px 50px;
   }
+
   .whyus {
     width: 85%;
   }
-  .whyus > div {
+
+  .whyus>div {
     padding: 20px 10px;
   }
-  .CareerPath > ul > li {
+
+  .CareerPath>ul>li {
     font-size: 1.05rem;
   }
+
   .CareerPath {
     width: 100%;
   }
 }
 
-@media all and (max-width: 1200px) {
-}
+@media all and (max-width: 1200px) {}
 
 @media all and (max-width: 1024px) {
-  .courseDetails {
-  }
+  .courseDetails {}
+
   .comp2 {
     display: block;
   }
 }
 
 @media all and (max-width: 768px) {
-  .Joinnurture h2 {
+  .Joinnurture div {
     margin-bottom: 30px;
   }
+
   .courseNameBanner h2 {
     font-size: 1.5rem;
   }
+
   .courseNameBanner {
     position: relative;
     height: 200px;
   }
+
   .courseDetails {
     top: 100px;
     left: 20px;
@@ -350,49 +404,62 @@
     transform: scale(0.8);
     z-index: 3;
   }
+
   .CourseSyllabus {
     max-width: 90%;
     margin: 650px auto auto auto;
   }
+
   .CourseSyllabus h2 {
     font-size: 1.7rem;
   }
+
   .courseul {
     margin: 20px 0px;
     padding: 0px;
   }
+
   .CourseDetailsAlign {
     width: 100%;
   }
+
   .CourseAccordionContainer {
     max-width: 100%;
     margin: 0px 10px;
   }
+
   .courseAccordion {
     margin: 2px;
   }
+
   .relatedCoursediv {
     display: none;
   }
+
   .courseAccordion {
     grid-template-columns: 100%;
   }
+
   .whyus {
     margin: 0px auto;
     display: grid;
     grid-template-columns: 1fr;
   }
-  .CareerPath > ul {
+
+  .CareerPath>ul {
     display: flex;
     flex-direction: column;
     row-gap: 25px;
   }
+
   .comp1 {
-    display: none;
+    /* display: none; */
   }
+
   .comp2 {
     display: block;
   }
+
   .cmplogos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -400,13 +467,15 @@
     margin: 30px auto;
     gap: 40px;
   }
-  .cmplogos > img {
+
+  .cmplogos>img {
     transform: scale(1.1);
     padding: 15px;
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
       rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
       rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
   }
+
   .studentWorked,
   .coursecareer {
     margin: 0px 5%;
@@ -414,13 +483,13 @@
   }
 }
 
-@media all and (max-width: 540px) {
-}
+@media all and (max-width: 540px) {}
 
 @keyframes gradientAnimation {
   0% {
     background-position: 0% 50%;
   }
+
   100% {
     background-position: 100% 50%;
   }

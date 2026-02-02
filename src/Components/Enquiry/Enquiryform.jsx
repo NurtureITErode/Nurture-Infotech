@@ -49,7 +49,7 @@ function Enquiryform() {
       <div className="Enquiry">
         <div className="Enquiry_head">
           <div className="enquiry_bg_img">
-            <img src="src/assets/Images/Enquire/career.webp" id="enquiry_bg_img" alt="wrong" />
+            <img src="/assets/Images/Enquire/career.webp" id="enquiry_bg_img" alt="wrong" />
           </div>
           <div className="enquiry_bg_text">
             <h1 id="enquiry_bg_text">The <span id="bg_text">beautiful</span> thing about learning is that nobody <span id="bg_text">can take it away</span> from you</h1>
@@ -91,7 +91,7 @@ function Enquiryform() {
                 <div className="logoanimate">
                   <div className="enquiry_logo">
                     <div>
-                      <img src="src/assets/Images/Enquire/logo.png" id="formlogo1" alt="wrong" />
+                      <img src="/assets/Images/Enquire/logo.png" id="formlogo1" alt="wrong" />
                     </div>
                     <h1 id="formHead1">Let's Connect with us!</h1>
                   </div>
@@ -104,38 +104,44 @@ function Enquiryform() {
                 </div>
                 <form autoComplete="on" className="form-sub-content">
                   <div>
-                    <input
-                      type="text"
-                      name="name"
-                      placeholder="Enter your name"
-                      required
-                      id="form-name"
-                      spellCheck="false"
-                      value={name}
-                      onChange={(e) => {
-                        setName(e.target.value);
-                      }}
-                    />{" "}
+                    <label>
+                      <input
+                        type="text"
+                        name="name"
+                        placeholder="Enter your name"
+                        required
+                        id="form-name"
+                        spellCheck="false"
+                        value={name}
+                        onChange={(e) => {
+                          setName(e.target.value);
+                        }}
+                      />
+                    </label>
                     <br />
-                    <input
-                      type="number"
-                      name="number"
-                      placeholder="Enter your Mobile Number"
-                      id="form-num"
-                      value={mobile}
-                      onChange={(e) => setMobile(e.target.value)}
-                      required
-                    />
+                    <label>
+                      <input
+                        type="number"
+                        name="number"
+                        placeholder="Enter your Mobile Number"
+                        id="form-num"
+                        value={mobile}
+                        onChange={(e) => setMobile(e.target.value)}
+                        required
+                      />
+                    </label>
                     <br />
-                    <input
-                      type="email"
-                      name="mail"
-                      placeholder="Enter your E-mail"
-                      id="form-mail"
-                      value={mail}
-                      onChange={(e) => setMail(e.target.value)}
-                      required
-                    />{" "}
+                    <label>
+                      <input
+                        type="email"
+                        name="mail"
+                        placeholder="Enter your E-mail"
+                        id="form-mail"
+                        value={mail}
+                        onChange={(e) => setMail(e.target.value)}
+                        required
+                      />
+                    </label>
                     <br />
                   </div>
                   <br />
@@ -143,13 +149,12 @@ function Enquiryform() {
                     <div className="course-select">
                       <select id="course-select">
                         <option hidden>Qualification</option>
-                        {/* <option>PG</option>
+                        <option>PG</option>
                         <option>UG</option>
                         <option>Diploma</option>
-                        <option>School</option> */}
-                        {['PG', '']}
+                        <option>School</option>
                       </select>
-                    </div>{" "}
+                    </div>
                     <br />
                     <div className="course-select">
                       <select id="course-select">
@@ -162,14 +167,17 @@ function Enquiryform() {
                   </div>
                   <div className="radiolg">
                     <div id="form-radio">
-                      {" "}
                       <span>Mode of Training : </span>
                       <div id="form-radio-btn">
                         <span>
-                          <input type="radio" name="mode" value="online" />  Online
+                          <label>
+                            <input type="radio" name="mode" value="online" />  Online
+                          </label>
                         </span>
                         <span>
-                          <input type="radio" name="mode" value="offline" /> Offline
+                          <label>
+                            <input type="radio" name="mode" value="offline" /> Offline
+                          </label>
                         </span>
                       </div>
                     </div>

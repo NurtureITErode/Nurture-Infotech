@@ -8,14 +8,14 @@ function CourseDetails() {
         <h1 className='CourseDetails_head'>Our Trending Courses of Nurture infoTech</h1>
         <div className='mainFrame'>
           <div className='CDRow'>
-            <div class="flip-card">
-              <div class="flip-card-inner">
-                <div class="flip-card-front">
-                  <p class="title">FLIP CARD</p>
+            <div className="flip-card">
+              <div className="flip-card-inner">
+                <div className="flip-card-front">
+                  <p className="title">FLIP CARD</p>
                   <p>Hover Me</p>
                 </div>
-                <div class="flip-card-back">
-                  <p class="title">BACK</p>
+                <div className="flip-card-back">
+                  <p className="title">BACK</p>
                   <p>Leave Me</p>
                 </div>
               </div>

@@ -35,7 +35,7 @@ function Footer() {
                     <h1>Contact Info</h1>
                     <div className='footerAddress'>
                         <div>
-                            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <svg width="20" height="20" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                                 <path d="M12 7a3 3 0 1 0 0 6 3 3 0 1 0 0-6z"></path>
                             </svg>
@@ -46,7 +46,7 @@ function Footer() {
                     </div>
                     <div className='footerphone'>
                         <div>
-                            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <svg width="20" height="20" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M15.05 5A5 5 0 0 1 19 8.95"></path>
                                 <path d="M15.05 1A9 9 0 0 1 23 8.94"></path>
                                 <path d="M22 16.92v3a1.998 1.998 0 0 1-2.18 2 19.791 19.791 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16.001 16.001 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.908.339 1.85.574 2.81.7A2 2 0 0 1 22 16.92Z"></path>
@@ -67,7 +67,7 @@ function Footer() {
                                         id="svg-icons"
                                         width="22"
                                         height="22"
-                                        class="svg-inline--fa fa-facebook-f fa-w-10"
+                                        className="svg-inline--fa fa-facebook-f fa-w-10"
                                         aria-hidden="true"
                                         focusable="false"
                                         data-prefix="fab"
@@ -92,7 +92,7 @@ function Footer() {
                                         id="svg-icons"
                                         width="20"
                                         height="22"
-                                        class="svg-inline--fa fa-instagram fa-w-14"
+                                        className="svg-inline--fa fa-instagram fa-w-14"
                                         aria-hidden="true"
                                         focusable="false"
                                         data-prefix="fab"
@@ -113,7 +113,7 @@ function Footer() {
                                         id="svg-icons"
                                         height="22"
                                         width="22"
-                                        class="svg-inline--fa fa-linkedin-in fa-w-14"
+                                        className="svg-inline--fa fa-linkedin-in fa-w-14"
                                         aria-hidden="true"
                                         focusable="false"
                                         data-prefix="fab"
@@ -134,7 +134,7 @@ function Footer() {
                                         id="svg-icons"
                                         height="22"
                                         width="22"
-                                        class="svg-inline--fa fa-twitter fa-w-16"
+                                        className="svg-inline--fa fa-twitter fa-w-16"
                                         aria-hidden="true"
                                         focusable="false"
                                         data-prefix="fab"
