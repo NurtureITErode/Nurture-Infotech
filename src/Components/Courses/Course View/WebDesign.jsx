@@ -462,9 +462,9 @@ function WebDesign() {
                   height="20"
                   fill="none"
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -766,7 +766,7 @@ function WebDesign() {
               <p>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  enable-background="new 0 0 64 64"
+                  enableBackground="new 0 0 64 64"
                   viewBox="0 0 64 64"
                   width="75"
                   height="100"
@@ -803,7 +803,7 @@ function WebDesign() {
             <p>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                enable-background="new 0 0 492 492"
+                enableBackground="new 0 0 492 492"
                 viewBox="0 0 492 492"
                 width="80"
                 height="100"
@@ -833,7 +833,7 @@ function WebDesign() {
                 xmlns="http://www.w3.org/2000/svg"
                 width="80"
                 height="100"
-                enable-background="new 0 0 66 66"
+                enableBackground="new 0 0 66 66"
                 viewBox="0 0 66 66"
               >
                 <rect width="11.81" height="10.903" x="53.19" y="48.31" />
@@ -849,10 +849,10 @@ function WebDesign() {
             <p>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                fill-rule="evenodd"
-                stroke-linejoin="round"
-                stroke-miterlimit="2"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                strokeLinejoin="round"
+                strokeMiterlimit="2"
+                clipRule="evenodd"
                 viewBox="0 0 512 512"
                 width="80"
                 height="100"

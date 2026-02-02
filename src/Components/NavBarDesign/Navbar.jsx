@@ -1,9 +1,14 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navigation.css";
 
 function Navbar() {
   const [servicesOpen, setServicesOpen] = useState(false);
+  const [opennav, setOpennav] = useState(false);
+  const closeNav = () => {
+    setOpennav(false)
+  };
+
   return (
     <div>
       <div className="bgbanner"></div>
@@ -14,9 +19,9 @@ function Navbar() {
             height="24"
             fill="none"
             stroke="white"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -30,9 +35,9 @@ function Navbar() {
             height="22"
             fill="none"
             stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -47,9 +52,9 @@ function Navbar() {
             height="22"
             fill="none"
             stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -64,7 +69,7 @@ function Navbar() {
               id="svg-icons"
               width="22"
               height="22"
-              class="svg-inline--fa fa-facebook-f fa-w-10"
+              className="svg-inline--fa fa-facebook-f fa-w-10"
               aria-hidden="true"
               focusable="false"
               data-prefix="fab"
@@ -89,7 +94,7 @@ function Navbar() {
               id="svg-icons"
               width="20"
               height="22"
-              class="svg-inline--fa fa-instagram fa-w-14"
+              className="svg-inline--fa fa-instagram fa-w-14"
               aria-hidden="true"
               focusable="false"
               data-prefix="fab"
@@ -110,7 +115,7 @@ function Navbar() {
               id="svg-icons"
               height="22"
               width="22"
-              class="svg-inline--fa fa-linkedin-in fa-w-14"
+              className="svg-inline--fa fa-linkedin-in fa-w-14"
               aria-hidden="true"
               focusable="false"
               data-prefix="fab"
@@ -131,7 +136,7 @@ function Navbar() {
               id="svg-icons"
               height="22"
               width="22"
-              class="svg-inline--fa fa-twitter fa-w-16"
+              className="svg-inline--fa fa-twitter fa-w-16"
               aria-hidden="true"
               focusable="false"
               data-prefix="fab"
@@ -165,20 +170,28 @@ function Navbar() {
       </header>
       <nav className="navbar">
         <div className="navbar-container container">
-          <input type="checkbox" name="" id=""></input>
-          <div className="hamburger-lines">
+          <input
+            type="checkbox"
+            id="check"
+            checked={opennav}
+            onChange={() => setOpennav(prev => !prev)}
+          />
+
+          <label htmlFor="check" className="hamburger-lines">
             <span className="line line1"></span>
             <span className="line line2"></span>
             <span className="line line3"></span>
-          </div>
-          <div className="menu-items">
-            <Link className="nav-link" to="/">
+          </label>
+
+          <div className={`menu-items ${opennav ? "open" : ""}`}>
+            <Link className="nav-link" to="/"
+              onClick={() => { setOpennav(false) }}>
               Home
             </Link>
-            <Link className="nav-link" to="/about">
+            <Link className="nav-link" to="/about" onClick={() => { setOpennav(false) }}>
               About
             </Link>
-            <Link className="nav-link" to="/courses">
+            <Link className="nav-link" to="/courses" onClick={() => { setOpennav(false) }}>
               Courses
             </Link>
             <div
@@ -188,27 +201,27 @@ function Navbar() {
             >
               <span className="nav-link dropdown-toggle">Services ▾</span>
               <div className="dropdown-menu">
-                <Link to="/courses" className="dropdown-item">Training</Link>
-                <Link to="/services/webdev" className="dropdown-item">Web Development</Link>
-                <Link to="/services/appdev" className="dropdown-item">App Development</Link>
-                <Link to="/services/graphic" className="dropdown-item">Graphic Designing</Link>
-                <Link to="/services/markting" className="dropdown-item">Digital Markting</Link>
-                <Link to="/intern" className="dropdown-item">Internship</Link>
+                <Link to="/courses" onClick={() => { setOpennav(false) }} className="dropdown-item">Training</Link>
+                <Link to="/services/webdev" onClick={() => { setOpennav(false) }} className="dropdown-item">Web Development</Link>
+                <Link to="/services/appdev" onClick={() => { setOpennav(false) }} className="dropdown-item">App Development</Link>
+                <Link to="/services/graphic" onClick={() => { setOpennav(false) }} className="dropdown-item">Graphic Designing</Link>
+                <Link to="/services/markting" onClick={() => { setOpennav(false) }} className="dropdown-item">Digital Markting</Link>
+                <Link to="/intern" onClick={() => { setOpennav(false) }} className="dropdown-item">Internship</Link>
               </div>
             </div>
-            <Link className="nav-link" to="/intern">
+            <Link className="nav-link" to="/intern" onClick={() => { setOpennav(false) }}>
               Internship
             </Link>
-            <Link className="nav-link" to="/hireus">
+            <Link className="nav-link" to="/hireus" onClick={() => { setOpennav(false) }}>
               Hire Us
             </Link>
-            <Link className="nav-link" to="/gallery">
+            <Link className="nav-link" to="/gallery" onClick={() => { setOpennav(false) }}>
               Gallery
             </Link>
-            <Link className="nav-link" to="/enquire">
+            <Link className="nav-link" to="/enquire" onClick={() => { setOpennav(false) }}>
               Enquiry
             </Link>
-            <Link className="nav-link" to="/contact">
+            <Link className="nav-link" to="/contact" onClick={() => { setOpennav(false) }}>
               Contact Us
             </Link>
             {/*  <Link className='nav-link' to='/category'>Category</Link>

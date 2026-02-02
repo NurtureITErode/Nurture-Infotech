@@ -40,12 +40,18 @@ const About = () => {
               programming languages such as Java and Python, web development,
               digital marketing,
             </p> */}
-            <h1 id="ihead">Elevate Your  <span id="intern-text">Career </span> Through Nurture Infotech <span id="intern-text"></span></h1>
+
+            <h1 id="ihead"> Elevate Your <span className='swoosh-wrap'> Career
+              <svg className="swoosh" viewBox="-10 15 300 50" preserveAspectRatio="none" aria-hidden="true">
+                <path d="M10 40 C50 25, 250 25, 290 40" stroke="#93ed25ff" strokeWidth="6" fill="none" strokeLinecap="round" />
+                <path d="M10 48 C50 33, 250 26, 290 48" stroke="#93ed25ff" strokeWidth="4" fill="none" strokeLinecap="round" />
+              </svg>
+            </span> Through Nurture Infotech</h1>
           </div>
           <p style={{ padding: "50px 10px" }}>Elevate your life with Nurture Infotech! Our comprehensive programs in Python, Digital Marketing, and programming offer transformative learning experiences. Master essential skills, unlock career opportunities, and enrich your future. Join us on a journey of growth and success through the world of IT and digital excellence.</p>
         </section>
         <section className="about_main_img">
-          <img src="src/assets/Images/About/businessman.png" alt="businessman"></img>
+          <img src="/assets/Images/About/businessman.png" alt="businessman"></img>
         </section>
       </section>
       <section className="Blank_banner">
@@ -90,7 +96,14 @@ const About = () => {
       </section>
 
       <section className="Joinnurture about_nurture">
-        <h2>What makes Nurture different</h2>
+        <div>
+          <h2>What makes Nurture different</h2>
+          <div className="underline">
+            <span className="line1"></span>
+            <span className="line2"></span>
+            <span className="line3"></span>
+          </div>
+        </div>
         <section className="whyus">
           <div className="whybox1">
             <h3>EXPERT TRAINERS</h3>
@@ -223,7 +236,7 @@ const About = () => {
               <p>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  enable-background="new 0 0 64 64"
+                  enableBackground="new 0 0 64 64"
                   viewBox="0 0 64 64"
                   width="75"
                   height="100"
@@ -260,7 +273,7 @@ const About = () => {
             <p>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                enable-background="new 0 0 492 492"
+                enableBackground="new 0 0 492 492"
                 viewBox="0 0 492 492"
                 width="80"
                 height="100"
@@ -290,7 +303,7 @@ const About = () => {
                 xmlns="http://www.w3.org/2000/svg"
                 width="80"
                 height="100"
-                enable-background="new 0 0 66 66"
+                enableBackground="new 0 0 66 66"
                 viewBox="0 0 66 66"
               >
                 <rect width="11.81" height="10.903" x="53.19" y="48.31" />
@@ -306,10 +319,10 @@ const About = () => {
             <p>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                fill-rule="evenodd"
-                stroke-linejoin="round"
-                stroke-miterlimit="2"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                strokeLinejoin="round"
+                strokeMiterlimit="2"
+                clipRule="evenodd"
                 viewBox="0 0 512 512"
                 width="80"
                 height="100"
@@ -343,16 +356,21 @@ const About = () => {
       </section>
       <section className="studentWorked">
         <h2>Our Students work at</h2>
+        <div className="underline">
+          <span className="line1"></span>
+          <span className="line2"></span>
+          <span className="line3"></span>
+        </div>
         <div className="comp1">
           <Company></Company>
         </div>
-        <div className="comp2">
+        {/* <div className="comp2">
           <div className="cmplogos">
-            {Companylogos.map((e) => {
-              return <img src={e.src} alt="logo"></img>;
+            {Companylogos.map((e, i) => {
+              return <img src={e.src} alt="logo" key={i}></img>;
             })}
           </div>
-        </div>
+        </div> */}
       </section>
     </div>
   );

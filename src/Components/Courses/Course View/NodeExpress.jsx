@@ -363,31 +363,31 @@ function NodeExpress() {
                     <path d="M109.797 91.305V35.019c0-2.08-1.271-4.045-3.12-5.085L57.786 1.85a5.106 5.106 0 0 0-1.848-.693l53.511 91.42c.231-.347.347-.809.347-1.271zM3.12 29.934C1.272 30.974 0 32.94 0 35.02v56.286c0 2.08 1.387 4.045 3.12 5.085l48.889 28.085c1.156.693 2.427.925 3.814.693L3.467 29.818l-.346.116z"></path>
                     <path
                       fill="url(#e)"
-                      fill-rule="evenodd"
+                      fillRule="evenodd"
                       d="M50.391.809l-.693.347h.924l-.231-.347z"
                       transform="translate(0 -9.246)"
                     ></path>
                     <path
                       fill="url(#f)"
-                      fill-rule="evenodd"
+                      fillRule="evenodd"
                       d="M106.792 105.636c1.387-.809 2.427-2.196 2.89-3.698L56.053 10.402c-1.387-.231-2.89-.116-4.16.693L3.351 39.065l52.355 95.465a8.057 8.057 0 0 0 2.196-.693l48.889-28.2z"
                       transform="translate(0 -9.246)"
                     ></path>
                     <path
                       fill="url(#g)"
-                      fill-rule="evenodd"
+                      fillRule="evenodd"
                       d="M111.3 104.712l-.347-.578v.809l.346-.231z"
                       transform="translate(0 -9.246)"
                     ></path>
                     <path
                       fill="url(#h)"
-                      fill-rule="evenodd"
+                      fillRule="evenodd"
                       d="M106.792 105.636l-48.773 28.085a6.973 6.973 0 0 1-2.196.693l.925 1.734 54.089-31.32v-.694l-1.387-2.312c-.231 1.618-1.271 3.005-2.658 3.814z"
                       transform="translate(0 -9.246)"
                     ></path>
                     <path
                       fill="url(#i)"
-                      fill-rule="evenodd"
+                      fillRule="evenodd"
                       d="M106.792 105.636l-48.773 28.085a6.973 6.973 0 0 1-2.196.693l.925 1.734 54.089-31.32v-.694l-1.387-2.312c-.231 1.618-1.271 3.005-2.658 3.814z"
                       transform="translate(0 -9.246)"
                     ></path>
@@ -531,9 +531,9 @@ function NodeExpress() {
                   height="20"
                   fill="none"
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -839,7 +839,7 @@ function NodeExpress() {
               <p>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  enable-background="new 0 0 64 64"
+                  enableBackground="new 0 0 64 64"
                   viewBox="0 0 64 64"
                   width="75"
                   height="100"
@@ -876,7 +876,7 @@ function NodeExpress() {
             <p>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                enable-background="new 0 0 492 492"
+                enableBackground="new 0 0 492 492"
                 viewBox="0 0 492 492"
                 width="80"
                 height="100"
@@ -906,7 +906,7 @@ function NodeExpress() {
                 xmlns="http://www.w3.org/2000/svg"
                 width="80"
                 height="100"
-                enable-background="new 0 0 66 66"
+                enableBackground="new 0 0 66 66"
                 viewBox="0 0 66 66"
               >
                 <rect width="11.81" height="10.903" x="53.19" y="48.31" />
@@ -922,10 +922,10 @@ function NodeExpress() {
             <p>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                fill-rule="evenodd"
-                stroke-linejoin="round"
-                stroke-miterlimit="2"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                strokeLinejoin="round"
+                strokeMiterlimit="2"
+                clipRule="evenodd"
                 viewBox="0 0 512 512"
                 width="80"
                 height="100"

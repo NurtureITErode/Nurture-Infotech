@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-
+import './Testimonials.css'
 function Testimonials({ bgicon, bgicon3 }) {
     const [current, setCurrent] = useState(0);
     const testimonials = [
@@ -42,7 +42,7 @@ function Testimonials({ bgicon, bgicon3 }) {
     return (
         <div>
             <div className='internship-testimonials' >
-                <div className='bg_icon'>
+                <div className='bg_icon_test'>
                     <img src={bgicon3} alt="" className="bg_icon_1" />
                     <img src={bgicon} alt="" className="bg_icon_2" />
                 </div>
@@ -73,6 +73,8 @@ function Testimonials({ bgicon, bgicon3 }) {
                                     key={index}
                                     className={`dot ${index === current ? 'active' : ''}`}
                                     onClick={() => setCurrent(index)}
+                                    aria-label={`Go to testimonial ${index + 1}`}
+                                    aria-current={index === current ? "true" : undefined}
                                 />
                             ))}
                         </div>

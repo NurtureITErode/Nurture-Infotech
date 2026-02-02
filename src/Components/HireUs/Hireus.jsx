@@ -26,7 +26,7 @@ function Hireus() {
         <div className="mainScreen">
           <div className="hireLogo">
             <img
-              src="src/assets/Images/Hire/rs.png"
+              src="/assets/Images/Hire/rs.png"
               className="hirelogoImg"
               alt="hireLogo"
             ></img>
@@ -57,7 +57,7 @@ function Hireus() {
           </div>
           <div className="TrainingModelDesign">
             <div className="TrainingModelTitle">
-              <div className="model1" onClick={() => showImage("Hire3")}>
+              <div className="model1" onClick={() => showImage("Hire2")}>
                 <h3>Train and Hire model</h3>
                 <p>
                   We will help you build your team by supporting you in all the
@@ -66,11 +66,11 @@ function Hireus() {
               </div>
               <div className="image-container-mobile">
                 <img
-                  src={`src/assets/Images/Hire/hire1.png`}
+                  src={`/assets/Images/Hire/Hire1.png`}
                   alt={`Image ${selectedTag}`}
                 />
               </div>
-              <div className="model2" onClick={() => showImage("Hire2")}>
+              <div className="model2" onClick={() => showImage("Hire3")}>
                 <h3>No Cost Hiring</h3>
 
                 <p>
@@ -80,7 +80,7 @@ function Hireus() {
               </div>
               <div className="image-container-mobile">
                 <img
-                  src={`src/assets/Images/Hire/hire2.png`}
+                  src={`/assets/Images/Hire/Hire2.png`}
                   alt={`Image ${selectedTag}`}
                 />
               </div>
@@ -93,7 +93,7 @@ function Hireus() {
               </div>
               <div className="image-container-mobile">
                 <img
-                  src={`./assets/Images/Hire/hire3.png`}
+                  src={`/assets/Images/Hire/Hire3.png`}
                   alt={`Image ${selectedTag}`}
                 />
               </div>
@@ -103,14 +103,14 @@ function Hireus() {
               {selectedTag ? (
                 <div className="image-container">
                   <img
-                    src={`src/assets/images/hire/${selectedTag}.png`}
+                    src={`/assets/Images/Hire/${selectedTag}.png`}
                     alt={`Image ${selectedTag}`}
                   />
                 </div>
               ) : (
                 <div className="image-container">
                   <img
-                    src={`src/assets/images/hire/hire1.png`}
+                    src={`/assets/Images/Hire/Hire1.png`}
                     alt={`Image ${selectedTag}`}
                   />
                 </div>
@@ -124,7 +124,7 @@ function Hireus() {
           <h1 className="HRHeading">Hire our Trainees</h1>
           <div className="HRForm">
             <div className="hrimg">
-              <img src="src/assets/Images/Hire/requirement.gif" alt="gif"></img>
+              <img src="/assets/Images/Hire/requirement.gif" alt="gif"></img>
             </div>
             <div className="FormDesign">
               <h1 className="FormDesignHeading">Hire our Trainees</h1>
@@ -164,8 +164,8 @@ function Hireus() {
               ></textarea>
               <label className="label"></label>
               <button className="Contactbutton">
-                <div class="svg-wrapper-1">
-                  <div class="svg-wrapper">
+                <div className="svg-wrapper-1">
+                  <div className="svg-wrapper">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"

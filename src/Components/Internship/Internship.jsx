@@ -1,275 +1,220 @@
-import { useRef, useState, useEffect } from 'react'
-import './Internship.css'
+import React, { useRef, useState, useEffect, Suspense } from 'react';
+import './Internship.css';
 import Banner from '../Banner/Banner';
-import Testimonials from './Testimonials';
-// import bgicon from './assets/Images/Internship images/data-science.jpg'
-const bgicon = "src/assets/Images/Internship images/course_shape02.png"
-const bgicon1 = "src/assets/Images/Internship images/blog_shape01.png"
-const bgicon2 = "src/assets/Images/Internship images/categories_shape02-1.png"
-const bgicon3 = "src/assets/Images/Internship images/categories_shape01.png"
+const Testimonials = React.lazy(() => import('./Testimonials'));
+
+const bgicon = "/assets/Images/Internship images/course_shape02.png";
+const bgicon1 = "/assets/Images/Internship images/blog_shape01.png";
+const bgicon2 = "/assets/Images/Internship images/categories_shape02-1.png";
+const bgicon3 = "/assets/Images/Internship images/categories_shape01.png";
 
 const Internship = () => {
-  const join = [{
-    id: 1,
-    title: "Ambitious College Students",
-    desc: "Whether you're in your first year or final semester, our internship gives you practical exposure to the tech world. Build skills, create projects, and get placement-ready.",
-  }, {
-    id: 2,
-    title: "Fresh Graduates",
-    desc: "Just out of college and unsure how to break into tech? Our internship bridges the gap between academics and industry with real-world experience and mentoring.",
-  }, {
-    id: 3,
-    title: "Pre-placed Candidates",
-    desc: "Got an offer letter but nervous about training or probation? Strengthen your core concepts and gain confidence before joining your MNC.",
-  }, {
-    id: 4,
-    title: "Working Professionals",
-    desc: "Want to switch to tech from a non-technical role? Our internship is designed to help you build real-world skills in development, testing, or UI/UX from the ground up.",
-  }]
+  const join = [
+    { id: 1, title: "Ambitious College Students", desc: "Whether you're in your first year or final semester, our internship gives you practical exposure to the tech world. Build skills, create projects, and get placement-ready." },
+    { id: 2, title: "Fresh Graduates", desc: "Just out of college and unsure how to break into tech? Our internship bridges the gap between academics and industry with real-world experience and mentoring." },
+    { id: 3, title: "Pre-placed Candidates", desc: "Got an offer letter but nervous about training or probation? Strengthen your core concepts and gain confidence before joining your MNC." },
+    { id: 4, title: "Working Professionals", desc: "Want to switch to tech from a non-technical role? Our internship is designed to help you build real-world skills in development, testing, or UI/UX from the ground up." }
+  ];
+
   const courseinfo = [
-    {
-      id: 1,
-      title: "Data Science",
-      img: "src/assets/Images/Internship images/data-science.jpg",
-      text: "Data science extracts insights from data, enabling informed decisions and predictions",
-      tag: "Trending"
-    },
-    {
-      id: 2,
-      title: "Data Analytics",
-      img: "src/assets/Images/Internship images/data-analytics.jpg",
-      text: "Data analytics transforms data into insights for better decision-making",
-      tag: "Trending"
-    },
-    {
-      id: 3,
-      title: "Artificial Intelligence",
-      img: "src/assets/Images/Internship images/AI.jpg",
-      text: "Artificial Intelligence enables machines to learn, reason, and solve problems",
-      tag: "Trending"
-    },
-    {
-      id: 4,
-      title: "Full Stack Development",
-      img: "src/assets/Images/Internship images/MERN-stack.jpg",
-      text: "Full Stack Development builds both front-end and back-end applications",
-      tag: "Trending"
-    },
-    {
-      id: 5,
-      title: "Python",
-      img: "src/assets/Images/Internship images/python.jpg",
-      text: "Python is a versatile language for web development and data analysis",
-      tag: ""
-    },
-    {
-      id: 6,
-      title: "Java",
-      img: "src/assets/Images/Internship images/java.jpg",
-      text: "Java is a object-oriented language for building scalable applications and systems",
-      tag: ""
-    },
-    {
-      id: 7,
-      title: "Web Development",
-      img: "src/assets/Images/Internship images/webdev.jpg",
-      text: "Web development creates interactive websites and applications for the internet",
-      tag: ""
-    },
-    {
-      id: 8,
-      title: "Software Testing",
-      img: "src/assets/Images/Internship images/software-testing.jpg",
-      text: "Software testing ensures quality by identifying and fixing bugs in applications",
-      tag: ""
+    { id: 1, title: "Data Science", img: "/assets/Images/Internship images/data-science.webp", text: "Data science extracts insights from data, enabling informed decisions and predictions", tag: "Trending" },
+    { id: 2, title: "Data Analytics", img: "/assets/Images/Internship images/data-analytics.webp", text: "Data analytics transforms data into insights for better decision-making", tag: "Trending" },
+    { id: 3, title: "Artificial Intelligence", img: "/assets/Images/Internship images/AI.webp", text: "Artificial Intelligence enables machines to learn, reason, and solve problems", tag: "Trending" },
+    { id: 4, title: "Full Stack Development", img: "/assets/Images/Internship images/MERN-stack.webp", text: "Full Stack Development builds both front-end and back-end applications", tag: "Trending" },
+    { id: 5, title: "Python", img: "/assets/Images/Internship images/python.webp", text: "Python is a versatile language for web development and data analysis", tag: "" },
+    { id: 6, title: "Java", img: "/assets/Images/Internship images/java.webp", text: "Java is an object-oriented language for building scalable applications and systems", tag: "" },
+    { id: 7, title: "Web Development", img: "/assets/Images/Internship images/webdev.webp", text: "Web development creates interactive websites and applications for the internet", tag: "" },
+    { id: 8, title: "Software Testing", img: "/assets/Images/Internship images/software-testing.webp", text: "Software testing ensures quality by identifying and fixing bugs in applications", tag: "" },
+    { id: 9, title: "UI / UX Design", img: "/assets/Images/Internship images/UIUX.webp", text: "UI/UX design focuses on creating user-friendly and visually appealing interfaces", tag: "Trending" },
+    { id: 10, title: "CCNA", img: "/assets/Images/Internship images/CCNA.webp", text: "CCNA certifies networking skills for configuring and managing Cisco networks", tag: "Trending" },
+    { id: 11, title: "Tally", img: "/assets/Images/Internship images/Tally.webp", text: "Tally is an accounting software used for financial management and bookkeeping", tag: "Trending" },
+    { id: 12, title: "Digital Marketing", img: "/assets/Images/Internship images/digital-marketing.webp", text: "Digital marketing uses online platforms to promote products and engage audiences.", tag: "Trending" }
+  ];
 
-    },
-    {
-      id: 9,
-      title: "UI / UX Design",
-      img: "src/assets/Images/Internship images/UIUX.jpg",
-      text: "UI/UX design focuses on creating user-friendly and visually appealing interfaces",
-      tag: "Trending"
-
-    },
-    {
-      id: 10,
-      title: "CCNA",
-      img: "src/assets/Images/Internship images/CCNA.jpg",
-      text: "CCNA certifies networking skills for configuring and managing Cisco networks",
-      tag: "Trending"
-    },
-    {
-      id: 11,
-      title: "Tally",
-      img: "src/assets/Images/Internship images/Tally.jpg",
-      text: "Tally is an accounting software used for financial management and bookkeeping",
-      tag: "Trending"
-    },
-    {
-      id: 12,
-      title: "Digital Marketing",
-      img: "src/assets/Images/Internship images/digital-marketing.jpg",
-      text: "Digital marketing uses online platforms to promote products and engage audiences.",
-      tag: "Trending"
-    }]
+  const [visibleCount, setVisibleCount] = useState(4);
   const [Courses, setCourses] = useState([]);
-  useEffect(() => {
-    console.log(1)
-    setCourses(courseinfo)
-  }, [])
-  const Form = useRef(null);
-  const toForm = () => {
-    Form.current?.scrollIntoView({ behavior: 'smooth' });
-  }
+  const loadMoreRef = useRef(null);
 
+  useEffect(() => { setCourses(courseinfo); }, []);
+
+  useEffect(() => {
+    if (!loadMoreRef.current) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setVisibleCount(prev => Math.min(prev + 6, Courses.length));
+        }
+      },
+      { root: null, rootMargin: "200px", threshold: 0 }
+    );
+    observer.observe(loadMoreRef.current);
+    return () => observer.disconnect();
+  }, [Courses.length]);
+
+  const Form = useRef(null);
+  const toForm = () => { Form.current?.scrollIntoView({ behavior: 'smooth' }); }
 
   return (
-    <div className='internship-container'>
-
-      {/* Internship Text */}
+    <main className='internship-container'>
+      {/* Background Icons */}
       <div className='bg_icon'>
-        <img src={bgicon} alt="" className="bg_icon_1" />
-        <img src={bgicon1} alt="" className="bg_icon_2" />
+        <img src={bgicon} alt="decorative icon" className="bg_icon_1" />
+        <img src={bgicon1} alt="decorative icon" className="bg_icon_2" />
       </div>
+
+      {/* Internship Intro */}
       <div className='internship-content'>
         <div id='itext'>
-          <h1 id='ihead' className='title'>Discover your <span id='intern-text'>passion</span>,
-            acquire the <span id='intern-text'>skills</span>, and upscale your <span id='intern-text'>talent</span>...</h1>
+          <h1 id='ihead' className='title'>
+            Discover your <span id='intern-text'>passion</span>, acquire the <span id='intern-text'>skills</span>, and upscale your <span id='intern-text'>talent</span>...
+          </h1>
           <p id='ipara'>Experience practical expertise, workplace familiarity and greater knowledge of industry.</p>
         </div>
         <div id='iimg'>
-          <img src="https://metaloopglobal.com/assets/images/about-image.png" height={350} alt='wrong'></img>
+          <img src="/assets/Images/Internship images/about-image.png" height={350} width={500} style={{ aspectRatio: '5/3' }} alt='Internship overview' />
         </div>
       </div>
+
+      {/* Banner Section */}
       <div className="intern-banner">
-        <h1> Explore our <span className='swoosh-wrap'> IT courses,
-          <svg className="swoosh" viewBox="0 0 300 60" preserveAspectRatio="none" aria-hidden="true">
-            <path d="M10 40 C50 25, 250 25, 290 40" stroke="#93ed25ff" strokeWidth="6" fill="none" stroke-linecap="round" />
-            <path d="M10 48 C50 33, 250 26, 290 48" stroke="#93ed25ff" strokeWidth="4" fill="none" stroke-linecap="round" />
-          </svg>
-
-        </span> designed to equip you with the latest tech skills...</h1>
-      </div>
-      {/* Trending Technologies */}
-      <div className="internship-courses">
-        <div className='intern_bg_icon'>
-          <img src={bgicon2} alt="" />
-        </div>
-        <div className="trending" >
-          {
-            Courses.map((course, i) => {
-              const showtag = [0, 1, 2, 3]
-              const show = showtag.includes(i)
-              return (
-                <div className="card1" key={i}>
-                  <span className='tagname'>
-                    {show ? "Trending" : "Recommended"}
-                  </span>
-                  <div className="card-logo">
-                    <img src={course.img} alt="Logo"></img>
-                  </div>
-                  <div className="card-body">
-                    <h2 className="card-title">{course.title}</h2>
-                    <p className='card-text'>{course.text}</p>
-                    <button class="card-button" onClick={toForm}>Explore</button>
-                  </div>
-                </div>
-              )
-            })
-          }
-        </div>
-      </div>
-
-      {/* <div className="intern-banner">
-          <h1>Join our <span className='swoosh-wrap'>internship program
+        <h1>
+          Explore our <span className='swoosh-wrap'>IT courses
             <svg className="swoosh" viewBox="0 0 300 60" preserveAspectRatio="none" aria-hidden="true">
-              <path d="M10 40 C50 25, 250 25, 290 40" stroke="#f3c042" strokeWidth="6" fill="none" stroke-linecap="round" />
-              <path d="M10 48 C50 33, 250 26, 290 48" stroke="#f3c042" strokeWidth="4" fill="none" stroke-linecap="round" />
+              <path d="M10 40 C50 25, 250 25, 290 40" stroke="#93ed25ff" strokeWidth="6" fill="none" strokeLinecap="round" />
+              <path d="M10 48 C50 33, 250 26, 290 48" stroke="#93ed25ff" strokeWidth="4" fill="none" strokeLinecap="round" />
             </svg>
-          </span> and kickstart your career in technology!</h1>
-        </div> */}
-      <Banner one="Join our " two="internship program" three="and kickstart your career in technology!"></Banner>
+          </span> designed to equip you with the latest tech skills...
+        </h1>
+      </div>
 
-      {/* Internship Form  */}
+      {/* Courses */}
+      <section className="internship-courses">
+        <div className='intern_bg_icon'>
+          <img src={bgicon2} alt="decorative background" />
+        </div>
 
-      <div className="neumorph box" ref={Form}>
+        <div className="trending">
+          {Courses.slice(0, visibleCount).map((course, i) => (
+            <div className="card1" key={course.id}>
+              <span className="tagname">{i < 4 ? "Trending" : "Recommended"}</span>
+
+              <div className="card-logo">
+                <img
+                  src={course.img}
+                  alt={course.title}
+                  width={320}
+                  height={200}
+                  style={{ width: '100%', height: '150px', objectFit: 'cover' }}
+                  loading="lazy"
+                  decoding="async"
+                  className="loaded"
+                />
+              </div>
+
+              <div className="card-body">
+                <h1 className="card-title">{course.title}</h1>
+                <p className="card-text">{course.text}</p>
+                <button className="card-button" onClick={toForm}>Explore</button>
+              </div>
+            </div>
+          ))}
+        </div>
+
+
+        {visibleCount < Courses.length && <div ref={loadMoreRef} style={{ height: '50px' }} />}
+      </section>
+
+      <Banner one="Join our " two="internship program" three="and kickstart your career in technology!" />
+
+      {/* Internship Form */}
+      <div className="neomorph box" ref={Form}>
         <div className="neoParent">
           <div className="neoForm">
             <div className="neoMain">
               <div className="neoimg_bg">
                 <div className="neoIcon">
-                  <img src="src/assets/Images/Enquire/logo.png" id="formlogo" alt='logo' />
+                  <img src="/assets/Images/Enquire/logo.png" id="formlogo" alt='Company Logo' />
                 </div>
               </div>
               <div className="neoHead">
-                <h1>Let's Connect with Us !!</h1>
+                <h2>Let's Connect with Us !!</h2>
               </div>
               <div className="neoContent">
-                <form autoComplete="off" method="get">
+                <form autoComplete="on">
                   <div className="neoformdata">
-                    <span id="neoinput"><input type="text" name="name" id="neoname" placeholder="Name" /></span>
+                    <label htmlFor="neoname" className="sr-only">Name</label>
+                    <input type="text" name="name" id="neoname" placeholder="Name" />
                   </div>
-                  <div>
-                    <span id="neoinput"><input type="text" name="mobile" id="neonum" placeholder="Mobile Number" />
-                    </span>
+                  <div className="neoformdata">
+                    <label htmlFor="neonum" className="sr-only">Mobile Number</label>
+                    <input type="text" name="mobile" id="neonum" placeholder="Mobile Number" />
                   </div>
-                  <div>
-                    <span id="neoinput"><input type="text" name="mail" id="neomail" placeholder="E-mail Address" />
-                    </span>
+                  <div className="neoformdata">
+                    <label htmlFor="neomail" className="sr-only">Email Address</label>
+                    <input type="text" name="mail" id="neomail" placeholder="E-mail Address" />
                   </div>
+
                   <div className="neoselect">
                     <div className="formqualify">
-                      <select id="neoqua">
-                        <option hidden>Qualification</option>
-                        <option>PG</option>
-                        <option>UG</option>
-                        <option>Diploma</option>
-                        <option>School</option>
+                      <label htmlFor="neoqua" className="sr-only">Qualification</label>
+                      <select id="neoqua" name="qualification" defaultValue="">
+                        <option value="" disabled hidden>Qualification</option>
+                        <option value="PG">PG</option>
+                        <option value="UG">UG</option>
+                        <option value="Diploma">Diploma</option>
+                        <option value="School">School</option>
                       </select>
                     </div>
                     <div className="formcourse">
-                      <select id="neocourse">
-                        <option hidden>Course</option>
-                        <option>Python</option>
-                        <option>Java</option>
-                        <option>Tally</option>
-                        <option>Data Analytics</option>
+                      <label htmlFor="neocourse" className="sr-only">Course</label>
+                      <select id="neocourse" name="course" defaultValue="">
+                        <option value="" disabled hidden>Course</option>
+                        <option value="Python">Python</option>
+                        <option value="Java">Java</option>
+                        <option value="Tally">Tally</option>
+                        <option value="Data Analytics">Data Analytics</option>
                       </select>
                     </div>
                   </div>
+
                   <div className="enq_btn">
-                    <span><input type="submit" value="Enquire" id="neobtn" /></span>
+                    <input type="submit" value="Enquire" id="neobtn" />
                   </div>
                 </form>
               </div>
             </div>
           </div>
         </div>
+
+        {/* Who Can Apply */}
         <div className="neoright">
           <div className="form-contents">
             <div className="form-content-sub">
-              <h1 id="form_head">
-                Who Can Apply for Our Internship?
-              </h1>
-              {join.map((e) => (
-                <div className="form-con" key={e.id}>
-                  <div className="form-con-btn">
-                    <button id="form-one">{e.id}</button>
+              <h2 id="form_head">Who Can Apply for Our Internship?</h2>
+              <div className='intern_text'>
+                {join.map(e => (
+                  <div className="intern-form-con" key={e.id}>
+                    <div className="intern-circle">
+                      <button id="form-one">{e.id}</button>
+                    </div>
+                    <div className="intern-content">
+                      <h3>{e.title}</h3>
+                      <p>{e.desc}</p>
+                    </div>
                   </div>
-                  <div className="form-con-content">
-                    <h3>{e.title}</h3>
-                    <p>{e.desc}</p>
-                  </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <Testimonials bgicon3={bgicon3} bgicon={bgicon} />
-    </div >
-  )
+
+      {/* Lazy-loaded Testimonials */}
+      <Suspense fallback={<div style={{ height: '300px' }} />}>
+        <Testimonials bgicon3={bgicon3} bgicon={bgicon} />
+      </Suspense>
+    </main>
+  );
 }
 
-export default Internship
+export default Internship;

@@ -27,7 +27,7 @@ function Contact() {
               <div className='ContactCall'>
                 <div className='callLogo'>
                   <div className='callnumber'>
-                    <svg width="26" height="56" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <svg width="26" height="56" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                       <path d="M15.05 5A5 5 0 0 1 19 8.95"></path>
                       <path d="M15.05 1A9 9 0 0 1 23 8.94"></path>
                       <path d="M22 16.92v3a1.998 1.998 0 0 1-2.18 2 19.791 19.791 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16.001 16.001 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.908.339 1.85.574 2.81.7A2 2 0 0 1 22 16.92Z"></path>
@@ -91,8 +91,8 @@ function Contact() {
               </textarea>
               <label className='label'></label>
               <button className='Contactbutton'>
-                <div class="svg-wrapper-1">
-                  <div class="svg-wrapper">
+                <div className="svg-wrapper-1">
+                  <div className="svg-wrapper">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
@@ -124,9 +124,9 @@ function Contact() {
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3911.877974411481!2d77.7155752750502!3d11.343622588841743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba96f3998053453%3A0x7ba00457d4d7cf91!2sNurture%20Infotech%20-%20Erode%20(Python%20%7C%20Java%20%7C%20Fullstack%20%7C%20Web%20Design%20%7C%20Graphic%20Design%20%7C%20Internship%20%7C%20Tally%20%7C%20Data%20Analytics)!5e0!3m2!1sen!2sin!4v1706511682273!5m2!1sen!2sin" 
         width="100%" height="500" 
         style={{"border":"1px solid black"}}
-        allowfullscreen="" 
+        allowFullScreen="" 
         loading="lazy" 
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
+        referrerPolicy="no-referrer-when-downgrade"></iframe>
 
         </map>
         </div>

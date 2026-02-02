@@ -62,8 +62,9 @@
   margin-top: 2%;
 }
 
-.form-con-content h3 {
+.form-con-content span {
   color: rgb(255, 255, 255);
+  font-size: 1.5rem;
 }
 
 .form-con {
@@ -119,7 +120,7 @@
   top: 3%;
   left: 5.7%;
   bottom: 0;
-  z-index:0;
+  z-index: 0;
   border-left: 2px dashed rgb(252, 252, 253);
 }
 
@@ -383,21 +384,17 @@ input[type='radio']:checked {
   /* width: 100%; */
 }
 
-.course-select label {
-  padding-left: 2%;
-  font-size: 1.1rem;
-}
-
 #course-select {
   height: 50px;
-  width: 150px;
+  width: 160px;
   border: none;
-  padding-left: 10px;
+  /* padding: 10px; */
   font-family: "Josefin Sans", sans-serif;
   border-radius: 3px;
   outline: none;
   color: rgba(3, 34, 160, 0.909);
   appearance: none;
+  text-align: center;
   font-size: 1.1rem;
 }
 
@@ -470,150 +467,6 @@ input[type='radio']:checked {
   }
 }
 
-.neumorph {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  height: 100%;
-  margin-top: 4%;
-}
-
-.neoParent {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 4%;
-  width: 100%;
-  z-index: 2;
-  background-color: #e4e8ed;
-}
-
-.neoright {
-  background-image: linear-gradient(155deg, #030c31, #150898);
-}
-
-.neoForm {
-  border-radius: 34px;
-  box-shadow: 13px 13px 20px #cbced1,
-    -13px -13px 20px #ffffff;
-  background-color: #DDE2E8;
-  padding: 2% 7%;
-}
-
-.neoMain {
-  padding: 5% 0;
-}
-
-.neoHead {
-  text-align: center;
-}
-
-.neoIcon {
-  border-radius: 50%;
-  height: 120px;
-  width: 120px;
-  background: #e8e8e8;
-  box-shadow: inset 5px 5px 8px #bebebe,
-    inset -5px -5px 8px #ffffff;
-  display: grid;
-  place-content: center;
-}
-
-.neoimg_bg {
-  display: grid;
-  place-items: center;
-  margin: 5% 0;
-}
-
-#formlogo {
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
-}
-
-.neoContent {
-  display: flex;
-  padding: 5% 0;
-  justify-content: center;
-}
-
-#neoname,
-#neonum,
-#neomail {
-  width: 400px;
-  height: 60px;
-  margin: 5% 0;
-  background: #e4ecec;
-  box-shadow: inset 8px 8px 8px #cbced1,
-    inset -8px -8px 8px #ffffff;
-  border: none;
-  font-size: 20px;
-  text-align: center;
-  font-family: "Josefin Sans", sans-serif;
-  outline: none;
-}
-
-.neoselect {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 3% 0;
-  width: 100%;
-}
-
-.formqualify,
-.formcourse {
-  width: 48%;
-}
-
-#neoqua,
-#neocourse {
-  width: 100%;
-  height: 60px;
-  margin: 5% 0;
-  background: #e4ecec;
-  box-shadow: inset 5px 5px 10px #b8b8b8,
-    inset -5px -5px 10px #ffffff;
-  border: none;
-  font-size: 20px;
-  text-align: center;
-  font-family: "Josefin Sans", sans-serif;
-  outline: none;
-}
-
-#neobtn {
-  width: 200px;
-  height: 60px;
-  background-color: #000185;
-  border: none;
-  font-size: 20px;
-  text-align: center;
-  font-family: "Josefin Sans", sans-serif;
-  outline: none;
-  color: white;
-  margin-top: 20px;
-  box-shadow: inset 20px 20px 18px #000035,
-    inset -20px -20px 18px #0002d5;
-  border-radius: 10px;
-  cursor: pointer;
-}
-
-.enq_btn {
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  width: 100%;
-}
-
-.form-contents {
-  color: yellow;
-}
-
-:is(#neoname, #neonum, #neomail)::placeholder {
-  text-align: center;
-  color: black;
-}
-
 /* Responsive */
 @media all and (max-width: 1200px) {
   .mainparent {
@@ -650,8 +503,6 @@ input[type='radio']:checked {
 
 }
 
-
-
 /* Laptop  */
 
 @media all and (max-width: 1024px) {
@@ -678,8 +529,8 @@ input[type='radio']:checked {
     justify-content: space-between;
     align-items: center;
   }
-  .sideline::before
-  {
+
+  .sideline::before {
     left: 7.4%;
   }
 }
@@ -727,8 +578,8 @@ input[type='radio']:checked {
     justify-content: center;
     width: 100%;
   }
-  .sideline::before
-  {
+
+  .sideline::before {
     left: 8%;
   }
 }
@@ -803,13 +654,4 @@ input[type='radio']:checked {
     justify-content: flex-start;
   }
 
-  .neoForm {
-    width: 100%;
-  }
-
-  #neoname,
-  #neonum,
-  #neomail {
-    width: 100%;
-  }
 }
